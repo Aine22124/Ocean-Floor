@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ehe2rsrrwcxd"]
+
+[ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="1_6hnpf"]
+[ext_resource type="Script" path="res://scripts/final_door.gd" id="1_ocgdc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4xsxw"]
+size = Vector2(257, 64)
+
+[node name="final-door" type="Area2D"]
+script = ExtResource("1_ocgdc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_4xsxw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 0.5)
+texture = ExtResource("1_6hnpf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
