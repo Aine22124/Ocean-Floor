@@ -1,13 +1,26 @@
 [gd_scene load_steps=4 format=3 uid="uid://dn4ta5j1coqj7"]
 
-[ext_resource type="Script" path="res://scripts/lever.gd" id="1_dxaiw"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="1_p4qkb"]
+
+[sub_resource type="GDScript" id="GDScript_mj4bg"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d6kei"]
 size = Vector2(129, 126)
 
 [node name="lever" type="Area2D"]
-script = ExtResource("1_dxaiw")
+script = SubResource("GDScript_mj4bg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)
