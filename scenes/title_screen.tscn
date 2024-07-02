@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://pq2u6olh1lva"]
+
+[ext_resource type="Script" path="res://scripts/title_screen.gd" id="1_2gw5a"]
+[ext_resource type="Texture2D" uid="uid://5vmcb3ebt7c4" path="res://images/Ocean-Floor-piskel (3).png" id="2_o1jlf"]
+
+[node name="title_screen" type="Node"]
+script = ExtResource("1_2gw5a")
+
+[node name="play_button" type="Button" parent="."]
+offset_left = 285.0
+offset_top = 466.0
+offset_right = 885.0
+offset_bottom = 516.0
+theme_override_font_sizes/font_size = 30
+text = "Play?"
+
+[node name="Ocean-floor-piskel(3)" type="Sprite2D" parent="."]
+position = Vector2(577, 285)
+texture = ExtResource("2_o1jlf")
+
+[connection signal="pressed" from="play_button" to="." method="_on_button_pressed"]

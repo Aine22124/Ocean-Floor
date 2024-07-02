@@ -23,4 +23,3 @@ text = "00:00"
 [node name="timer" type="Timer" parent="label"]
 wait_time = 120.0
 one_shot = true
-autostart = true

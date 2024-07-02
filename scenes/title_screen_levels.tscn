@@ -1,0 +1,85 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckiv380ge1fbc"]
+
+[ext_resource type="Script" path="res://scripts/title_screen_levels.gd" id="1_m1crr"]
+[ext_resource type="Texture2D" uid="uid://5vmcb3ebt7c4" path="res://images/Ocean-Floor-piskel (3).png" id="1_rfnde"]
+
+[node name="title_screen_levels" type="Node"]
+script = ExtResource("1_m1crr")
+
+[node name="Ocean-floor-piskel(3)" type="Sprite2D" parent="."]
+position = Vector2(545, 139)
+scale = Vector2(0.751712, 0.788462)
+texture = ExtResource("1_rfnde")
+
+[node name="level_1_button" type="Button" parent="."]
+offset_left = 172.0
+offset_top = 295.0
+offset_right = 546.0
+offset_bottom = 354.0
+theme_override_font_sizes/font_size = 30
+text = "Level 1"
+
+[node name="level_2_button" type="Button" parent="."]
+offset_left = 172.0
+offset_top = 377.0
+offset_right = 546.0
+offset_bottom = 436.0
+theme_override_font_sizes/font_size = 30
+text = "Level 2
+"
+
+[node name="level_3_button" type="Button" parent="."]
+offset_left = 172.0
+offset_top = 455.0
+offset_right = 546.0
+offset_bottom = 514.0
+theme_override_font_sizes/font_size = 30
+text = "Level 3
+"
+
+[node name="level_4_button" type="Button" parent="."]
+offset_left = 172.0
+offset_top = 537.0
+offset_right = 546.0
+offset_bottom = 596.0
+theme_override_font_sizes/font_size = 30
+text = "Level 4
+"
+
+[node name="level_5_button" type="Button" parent="."]
+offset_left = 583.0
+offset_top = 295.0
+offset_right = 957.0
+offset_bottom = 354.0
+theme_override_font_sizes/font_size = 30
+text = "Level 5"
+
+[node name="level_6_button" type="Button" parent="."]
+anchors_preset = -1
+anchor_top = -2.392
+anchor_bottom = -2.392
+offset_left = 583.0
+offset_top = 1927.02
+offset_right = 957.0
+offset_bottom = 1986.02
+theme_override_font_sizes/font_size = 30
+text = "Level 6"
+
+[node name="level_7_button" type="Button" parent="."]
+offset_left = 583.0
+offset_top = 455.0
+offset_right = 957.0
+offset_bottom = 514.0
+theme_override_font_sizes/font_size = 30
+text = "Level 7"
+
+[node name="level_8_button" type="Button" parent="."]
+offset_left = 583.0
+offset_top = 537.0
+offset_right = 957.0
+offset_bottom = 596.0
+theme_override_font_sizes/font_size = 30
+text = "Level 8"
+
+[connection signal="pressed" from="level_1_button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="level_2_button" to="." method="_on_level_2_button_pressed"]
