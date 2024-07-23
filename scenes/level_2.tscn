@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="3_rxy33"]
 [ext_resource type="PackedScene" uid="uid://dn4ta5j1coqj7" path="res://prefabs/lever.tscn" id="4_a778n"]
 [ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="5_cp7ys"]
-[ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="6_pcyyi"]
+[ext_resource type="PackedScene" uid="uid://bnevf211w1vry" path="res://prefabs/final_door_level2.tscn" id="6_kvrhl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2uts7"]
 texture = ExtResource("2_ag7sa")
@@ -38,10 +38,13 @@ limit_right = 2432
 limit_bottom = 1152
 
 [node name="lever" parent="." instance=ExtResource("4_a778n")]
-position = Vector2(2174, 349)
+position = Vector2(2177, 353)
+rotation = -1.5708
 
 [node name="gate" parent="." instance=ExtResource("5_cp7ys")]
-position = Vector2(364, 881)
+position = Vector2(449, 897)
+rotation = -1.57079
 
-[node name="final-door" parent="." instance=ExtResource("6_pcyyi")]
-position = Vector2(123, 952)
+[node name="final-door" parent="." instance=ExtResource("6_kvrhl")]
+position = Vector2(39, 897)
+rotation = -1.5708

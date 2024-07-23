@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.2", "GL Compatibility")
 boot_splash/bg_color=Color(0.0705882, 0.203922, 0.584314, 1)
 config/icon="res://images/icon.svg"
 
+[autoload]
+
+Autoload="*res://scripts/Autoload.gd"
+
 [input]
 
 player_up={

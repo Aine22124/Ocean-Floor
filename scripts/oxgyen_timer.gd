@@ -1,13 +1,15 @@
 extends Node
 
+
 @onready var label = $label
-@onready var timer = $timer
+@onready var timer = $label/timer
 
 func _ready():
-	pass
+	timer.wait_time = Autoload.TimeDuration
+	timer.start
 
 func time_left_to_live():
-	var time_left = timer.timer_left
+	var time_left = timer.get_time_left()
 	var minute = floor(time_left / 60)
 	var second = int(time_left) % 60
 	return [minute, second]
