@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://cseuuo0o6u7t8"]
+[gd_scene load_steps=10 format=3 uid="uid://cseuuo0o6u7t8"]
 
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="1_j3lbp"]
 [ext_resource type="Script" path="res://scripts/level_1.gd" id="1_jwugd"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="2_j8gmw"]
 [ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="3_harwg"]
 [ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="4_ccgkk"]
+[ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="4_ohkfp"]
 [ext_resource type="PackedScene" uid="uid://dn4ta5j1coqj7" path="res://prefabs/lever.tscn" id="6_6bakt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lpvlo"]
@@ -45,5 +46,7 @@ position = Vector2(1538, 575)
 
 [node name="lever" parent="." instance=ExtResource("6_6bakt")]
 position = Vector2(479, 651)
+
+[node name="oxgyen_timer" parent="." instance=ExtResource("4_ohkfp")]
 
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]

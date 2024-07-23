@@ -11,7 +11,7 @@ offset_left = 285.0
 offset_top = 466.0
 offset_right = 885.0
 offset_bottom = 516.0
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 35
 text = "Play?"
 
 [node name="Ocean-floor-piskel(3)" type="Sprite2D" parent="."]
