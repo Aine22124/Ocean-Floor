@@ -20,4 +20,4 @@ func _process(delta):
 
 
 func _on_timer_timeout():
-	oxygen_0.emit()
+	get_tree().change_scene_to_file("res://scenes/dead_screen.tscn")

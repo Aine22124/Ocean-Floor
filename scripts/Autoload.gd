@@ -1,6 +1,6 @@
 extends Node
 
-var TimeDuration: int = 5
+var TimeDuration: int = 20
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,5 +11,3 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_oxgyen_timer_oxygen_0():
-	get_tree().change_scene_to_file("res://scenes/title_screen_levels.tscn")
