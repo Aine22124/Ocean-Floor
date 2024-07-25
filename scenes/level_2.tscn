@@ -40,13 +40,13 @@ limit_top = 0
 limit_right = 2432
 limit_bottom = 1152
 
+[node name="gate2" parent="." instance=ExtResource("5_cp7ys")]
+position = Vector2(451, 895)
+rotation = -1.57188
+
 [node name="lever" parent="." instance=ExtResource("4_a778n")]
 position = Vector2(2177, 353)
 rotation = -1.5708
-
-[node name="gate" parent="." instance=ExtResource("5_cp7ys")]
-position = Vector2(449, 897)
-rotation = -1.57079
 
 [node name="final-door" parent="." instance=ExtResource("6_kvrhl")]
 position = Vector2(39, 897)
@@ -96,4 +96,4 @@ position = Vector2(1704, 205)
 [node name="coin12" parent="." instance=ExtResource("8_xvi1m")]
 position = Vector2(2170, 205)
 
-[connection signal="area_shape_entered" from="lever" to="gate" method="_on_lever_area_shape_entered"]
+[connection signal="body_exited" from="lever" to="gate2" method="_on_lever_body_exited"]

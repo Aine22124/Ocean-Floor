@@ -21,14 +21,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -202.0
-offset_top = 5.0
-offset_right = 202.0
-offset_bottom = 217.0
+offset_left = -220.0
+offset_top = 16.0
+offset_right = 220.0
+offset_bottom = 306.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/h_separation = 20
-theme_override_constants/v_separation = 20
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 30
 columns = 2
 
 [node name="level_1_button" type="Button" parent="GridContainer"]
@@ -90,7 +90,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_vdjgd")
 
 [node name="Ocean-floor-piskel(3)" type="Sprite2D" parent="PanelContainer"]
-scale = Vector2(0.751712, 0.788462)
+position = Vector2(-4, 0)
 texture = ExtResource("1_rfnde")
 offset = Vector2(30, 0)
 
