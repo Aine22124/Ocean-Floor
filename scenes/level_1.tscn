@@ -86,7 +86,6 @@ position = Vector2(1595, 1198)
 [node name="coin8" parent="." instance=ExtResource("8_eqtvl")]
 position = Vector2(1535, 466)
 
-[connection signal="area_exited" from="lever" to="gate" method="_on_lever_area_exited"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="treasure_chest_opened" from="treasure_chest2" to="." method="_on_treasure_chest_2_treasure_chest_opened"]
 [connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
