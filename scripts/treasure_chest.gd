@@ -1,6 +1,6 @@
 extends Area2D
 
-signal coin_picked_up
+signal treasure_chest_opened
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,7 +13,7 @@ func _process(delta):
 
 
 func _on_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	#coin has been touched, emit signal and then remove coin
-	coin_picked_up.emit()
+	#treasure chest touched, emit signal and then remove chest
+	treasure_chest_opened.emit()
 	queue_free()
 	

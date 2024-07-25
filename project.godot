@@ -20,6 +20,10 @@ config/icon="res://images/icon.svg"
 
 Autoload="*res://scripts/Autoload.gd"
 
+[display]
+
+window/stretch/aspect="expand"
+
 [input]
 
 player_up={

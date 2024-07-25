@@ -15,3 +15,4 @@ horizontal_alignment = 1
 offset_top = 146.0
 offset_right = 1149.0
 offset_bottom = 600.0
+text = "wasd for movement"

@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var score = 0
+ var points: int = Autoload.score
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,7 +12,19 @@ func _process(delta):
 	pass
 
 
-func _on_coin_area_entered(area):
-	#touch the coin add to points and remove coin
-	print("done")
-	score = score + 1
+func _on_coin_coin_picked_up():
+	#add points!
+	points = points + 1
+	print(points)
+
+
+func _on_treasure_chest_treasure_chest_opened():
+	#add points!
+	points = points + 5
+	print(points)
+
+
+func _on_treasure_chest_2_treasure_chest_opened():
+		#add points!
+	points = points + 5
+	print(points)
