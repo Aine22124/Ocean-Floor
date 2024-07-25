@@ -54,17 +54,46 @@ layer = 2
 
 [node name="oxgyen_timer" parent="CanvasLayer" instance=ExtResource("4_ohkfp")]
 
-[node name="coin" parent="." instance=ExtResource("8_eqtvl")]
-position = Vector2(766, 263)
-
 [node name="treasure_chest" parent="." instance=ExtResource("9_okrsc")]
 position = Vector2(874, 1297)
 
 [node name="treasure_chest2" parent="." instance=ExtResource("9_okrsc")]
 position = Vector2(1812, 238)
-scale = Vector2(-1.08, 1)
+rotation = 3.14159
+scale = Vector2(1.08, -1)
 
-[connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
-[connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
+[node name="coin" parent="." instance=ExtResource("8_eqtvl")]
+position = Vector2(766, 263)
+
+[node name="coin2" parent="." instance=ExtResource("8_eqtvl")]
+position = Vector2(773, 635)
+
+[node name="coin3" parent="." instance=ExtResource("8_eqtvl")]
+position = Vector2(774, 952)
+
+[node name="coin4" parent="." instance=ExtResource("8_eqtvl")]
+position = Vector2(448, 1208)
+
+[node name="coin5" parent="." instance=ExtResource("8_eqtvl")]
+position = Vector2(194, 986)
+
+[node name="coin6" parent="." instance=ExtResource("8_eqtvl")]
+position = Vector2(374, 648)
+
+[node name="coin7" parent="." instance=ExtResource("8_eqtvl")]
+position = Vector2(1595, 1198)
+
+[node name="coin8" parent="." instance=ExtResource("8_eqtvl")]
+position = Vector2(1535, 466)
+
+[connection signal="area_exited" from="lever" to="gate" method="_on_lever_area_exited"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="treasure_chest_opened" from="treasure_chest2" to="." method="_on_treasure_chest_2_treasure_chest_opened"]
+[connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin2" to="." method="_on_coin_2_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin3" to="." method="_on_coin_3_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin4" to="." method="_on_coin_4_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin5" to="." method="_on_coin_5_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin6" to="." method="_on_coin_6_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin7" to="." method="_on_coin_7_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin8" to="." method="_on_coin_8_coin_picked_up"]

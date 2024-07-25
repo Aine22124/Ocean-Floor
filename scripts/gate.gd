@@ -14,3 +14,4 @@ func _process(delta):
 
 func _on_lever_body_entered(body):
 	hide()
+	queue_free()

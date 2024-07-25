@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ce1rv1ko2uyeb"]
+[gd_scene load_steps=12 format=3 uid="uid://ce1rv1ko2uyeb"]
 
 [ext_resource type="Script" path="res://scripts/scene_2.gd" id="1_fmdy2"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="2_ag7sa"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://dn4ta5j1coqj7" path="res://prefabs/lever.tscn" id="4_a778n"]
 [ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="5_cp7ys"]
 [ext_resource type="PackedScene" uid="uid://bnevf211w1vry" path="res://prefabs/final_door_level2.tscn" id="6_kvrhl"]
+[ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="7_7e6fu"]
+[ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="8_xvi1m"]
+[ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="9_qr0ue"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2uts7"]
 texture = ExtResource("2_ag7sa")
@@ -48,3 +51,49 @@ rotation = -1.57079
 [node name="final-door" parent="." instance=ExtResource("6_kvrhl")]
 position = Vector2(39, 897)
 rotation = -1.5708
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="oxgyen_timer" parent="CanvasLayer" instance=ExtResource("7_7e6fu")]
+
+[node name="coin" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(1736, 839)
+
+[node name="treasure_chest" parent="." instance=ExtResource("9_qr0ue")]
+position = Vector2(741, 273)
+
+[node name="coin2" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(251, 541)
+
+[node name="coin3" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(622, 635)
+
+[node name="coin4" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(860, 839)
+
+[node name="coin5" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(1458, 839)
+
+[node name="coin6" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(162, 900)
+
+[node name="coin7" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(310, 900)
+
+[node name="coin8" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(1151, 839)
+
+[node name="coin9" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(1535, 466)
+
+[node name="coin10" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(1076, 466)
+
+[node name="coin11" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(1704, 205)
+
+[node name="coin12" parent="." instance=ExtResource("8_xvi1m")]
+position = Vector2(2170, 205)
+
+[connection signal="area_shape_entered" from="lever" to="gate" method="_on_lever_area_shape_entered"]

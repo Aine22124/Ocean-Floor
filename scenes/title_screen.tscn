@@ -1,21 +1,52 @@
-[gd_scene load_steps=3 format=3 uid="uid://pq2u6olh1lva"]
+[gd_scene load_steps=4 format=3 uid="uid://pq2u6olh1lva"]
 
 [ext_resource type="Script" path="res://scripts/title_screen.gd" id="1_2gw5a"]
 [ext_resource type="Texture2D" uid="uid://5vmcb3ebt7c4" path="res://images/Ocean-Floor-piskel (3).png" id="2_o1jlf"]
 
-[node name="title_screen" type="Node"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_artp5"]
+
+[node name="title_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_2gw5a")
 
 [node name="play_button" type="Button" parent="."]
-offset_left = 285.0
-offset_top = 466.0
-offset_right = 885.0
-offset_bottom = 516.0
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -47.5
+offset_top = -145.0
+offset_right = 47.5
+offset_bottom = -88.0
+grow_horizontal = 2
+grow_vertical = 0
 theme_override_font_sizes/font_size = 35
 text = "Play?"
 
-[node name="Ocean-floor-piskel(3)" type="Sprite2D" parent="."]
-position = Vector2(577, 285)
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_artp5")
+
+[node name="Ocean-floor-piskel(3)" type="Sprite2D" parent="PanelContainer"]
 texture = ExtResource("2_o1jlf")
+offset = Vector2(40, 0)
 
 [connection signal="pressed" from="play_button" to="." method="_on_button_pressed"]

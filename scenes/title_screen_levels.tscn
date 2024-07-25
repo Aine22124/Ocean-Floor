@@ -1,86 +1,98 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckiv380ge1fbc"]
+[gd_scene load_steps=4 format=3 uid="uid://ckiv380ge1fbc"]
 
 [ext_resource type="Script" path="res://scripts/title_screen_levels.gd" id="1_m1crr"]
 [ext_resource type="Texture2D" uid="uid://5vmcb3ebt7c4" path="res://images/Ocean-Floor-piskel (3).png" id="1_rfnde"]
 
-[node name="title_screen_levels" type="Node"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vdjgd"]
+
+[node name="title_screen_levels" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_m1crr")
 
-[node name="Ocean-floor-piskel(3)" type="Sprite2D" parent="."]
-position = Vector2(545, 139)
-scale = Vector2(0.751712, 0.788462)
-texture = ExtResource("1_rfnde")
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -202.0
+offset_top = 5.0
+offset_right = 202.0
+offset_bottom = 217.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
 
-[node name="level_1_button" type="Button" parent="."]
-offset_left = 172.0
-offset_top = 295.0
-offset_right = 546.0
-offset_bottom = 354.0
+[node name="level_1_button" type="Button" parent="GridContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Level 1"
 
-[node name="level_2_button" type="Button" parent="."]
-offset_left = 172.0
-offset_top = 377.0
-offset_right = 546.0
-offset_bottom = 436.0
+[node name="level_2_button" type="Button" parent="GridContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Level 2
 "
 
-[node name="level_3_button" type="Button" parent="."]
-offset_left = 172.0
-offset_top = 455.0
-offset_right = 546.0
-offset_bottom = 514.0
+[node name="level_3_button" type="Button" parent="GridContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 3
+text = "coming soon!
 "
 
-[node name="level_4_button" type="Button" parent="."]
-offset_left = 172.0
-offset_top = 537.0
-offset_right = 546.0
-offset_bottom = 596.0
+[node name="level_4_button" type="Button" parent="GridContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 4
+text = "coming soon!
 "
 
-[node name="level_5_button" type="Button" parent="."]
-offset_left = 583.0
-offset_top = 295.0
-offset_right = 957.0
-offset_bottom = 354.0
+[node name="level_5_button" type="Button" parent="GridContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 5"
+text = "coming soon!"
 
-[node name="level_6_button" type="Button" parent="."]
-anchors_preset = -1
-anchor_top = -2.392
-anchor_bottom = -2.392
-offset_left = 583.0
-offset_top = 1927.02
-offset_right = 957.0
-offset_bottom = 1986.02
+[node name="level_6_button" type="Button" parent="GridContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 6"
+text = "???"
 
-[node name="level_7_button" type="Button" parent="."]
-offset_left = 583.0
-offset_top = 455.0
-offset_right = 957.0
-offset_bottom = 514.0
+[node name="level_7_button" type="Button" parent="GridContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 7"
+text = "???"
 
-[node name="level_8_button" type="Button" parent="."]
-offset_left = 583.0
-offset_top = 537.0
-offset_right = 957.0
-offset_bottom = 596.0
+[node name="level_8_button" type="Button" parent="GridContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 8"
+text = "???"
 
-[connection signal="pressed" from="level_1_button" to="." method="_on_level_1_button_pressed"]
-[connection signal="pressed" from="level_2_button" to="." method="_on_level_2_button_pressed"]
-[connection signal="pressed" from="level_3_button" to="." method="_on_level_3_button_pressed"]
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -157.0
+offset_right = 20.0
+offset_bottom = -117.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vdjgd")
+
+[node name="Ocean-floor-piskel(3)" type="Sprite2D" parent="PanelContainer"]
+scale = Vector2(0.751712, 0.788462)
+texture = ExtResource("1_rfnde")
+offset = Vector2(30, 0)
+
+[connection signal="pressed" from="GridContainer/level_1_button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="GridContainer/level_2_button" to="." method="_on_level_2_button_pressed"]

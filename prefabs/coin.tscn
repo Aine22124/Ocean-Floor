@@ -4,12 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://fgsjjdpofjc8" path="res://images/coin.png" id="1_wmwg0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4fxdn"]
-radius = 16.1245
+radius = 32.5576
 
 [node name="coin" type="Area2D"]
 script = ExtResource("1_r6aqf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
 texture = ExtResource("1_wmwg0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
