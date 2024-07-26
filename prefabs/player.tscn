@@ -3,16 +3,18 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_bidm7"]
 [ext_resource type="Texture2D" uid="uid://bhs1ceqoydg4b" path="res://images/scuba-diver-idea-removebg-preview (1).png" id="2_myl5m"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuei0"]
-size = Vector2(110, 95)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wkxtk"]
+radius = 18.0
+height = 142.0
 
 [node name="player" type="CharacterBody2D"]
+disable_mode = 2
 script = ExtResource("1_bidm7")
 speed = 300
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(21, -4.5)
-shape = SubResource("RectangleShape2D_yuei0")
+rotation = 1.309
+shape = SubResource("CapsuleShape2D_wkxtk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_myl5m")

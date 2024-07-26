@@ -4,15 +4,15 @@
 [ext_resource type="Script" path="res://scripts/gate.gd" id="1_2touw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pf0h2"]
-size = Vector2(252, 124)
+size = Vector2(256, 128)
 
-[node name="gate" type="Area2D"]
+[node name="gate" type="StaticBody2D"]
+disable_mode = 2
 script = ExtResource("1_2touw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 1)
 texture = ExtResource("1_2mht8")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(1, -1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_pf0h2")

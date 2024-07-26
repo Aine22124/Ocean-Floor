@@ -1,24 +1,38 @@
 extends CharacterBody2D
+
+
 @export var speed = 200
+var PlayerDirection: Vector2 = Vector2.ZERO
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	$Sprite2D.flip_h = false
+	pass
+
+func get_input():
+	var input_dir = Input.get_vector("player_left", "player_right", "player_up", "player_down")
+	velocity = input_dir * speed
+	self.set_rotation( input_dir.angle())
+
+func _physics_process(delta):
+	get_input()
+	move_and_collide(velocity * delta)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-#movement
-	if Input.is_action_pressed("player_down"):
-		velocity.y = speed
-	if Input.is_action_pressed("player_up"):
-		velocity.y = - speed
-	if Input.is_action_pressed("player_left"):
-		velocity.x = - speed 
-		$Sprite2D.flip_h = true
-	if Input.is_action_pressed("player_right"):
-		velocity.x = speed
-		$Sprite2D.flip_h = false
-
-	move_and_slide()
+#func _process(delta):
+##movement
+	#if Input.is_action_pressed("player_down"):
+		#PlayerDirection.y = speed * delta
+	#if Input.is_action_pressed("player_up"):
+		#PlayerDirection.y = -speed * delta
+	#if Input.is_action_pressed("player_left"):
+		#PlayerDirection.x = -speed * delta
+		#$Sprite2D.flip_h = true
+	#if Input.is_action_pressed("player_right"):
+		#PlayerDirection.x = speed * delta
+		#$Sprite2D.flip_h = false
+		
+	#velocity.y = PlayerDirection.y
+	#velocity.x = PlayerDirection.x
+	
+	#move_and_slide()
