@@ -1,30 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cvu02dgni5apl"]
+[gd_scene load_steps=4 format=3 uid="uid://cvu02dgni5apl"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_bidm7"]
 [ext_resource type="Texture2D" uid="uid://bhs1ceqoydg4b" path="res://images/scuba-diver-idea-removebg-preview (1).png" id="2_myl5m"]
-[ext_resource type="Texture2D" uid="uid://bx4ql6adoufx7" path="res://images/scuba-flipped.png" id="3_r37dw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yuei0"]
 size = Vector2(110, 95)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_4x0qk"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_r37dw")
-}],
-"loop": true,
-"name": &"left-scuba",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_myl5m")
-}],
-"loop": true,
-"name": &"right-scuba",
-"speed": 5.0
-}]
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_bidm7")
@@ -35,10 +15,4 @@ position = Vector2(21, -4.5)
 shape = SubResource("RectangleShape2D_yuei0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
 texture = ExtResource("2_myl5m")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_4x0qk")
-animation = &"left-scuba"
-autoplay = "right-scuba"
