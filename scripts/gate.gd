@@ -7,10 +7,6 @@ func _ready():
 	show()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 func _on_lever_body_entered(body):
 	hide()
 	collision_shape_2d.set_disabled(true)
