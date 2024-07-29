@@ -1,7 +1,7 @@
 extends Node2D
 
-@onready var Autoload.score = score
-var points = score
+#@onready var Autoload.score = score
+var points = int(0)
 
 
 func _on_coin_coin_picked_up():

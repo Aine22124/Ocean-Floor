@@ -9,12 +9,12 @@ size = Vector2(177, 192)
 [node name="treasure_chest" type="Area2D"]
 script = ExtResource("1_cgcfa")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(2, 2)
-texture = ExtResource("2_tjb1u")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, -11)
 shape = SubResource("RectangleShape2D_g4i4x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_tjb1u")
 
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

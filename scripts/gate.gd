@@ -8,7 +8,12 @@ func _ready():
 
 
 func _on_lever_body_entered(body):
-	hide()
-	collision_shape_2d.set_disabled(true)
-	print(collision_shape_2d.is_disabled())
+	queue_free()
+	#hide()
+	#collision_shape_2d.set_disabled(true)
+	#print(collision_shape_2d.is_disabled())
 
+
+
+func _on_lever_body_exited(body):
+	queue_free()

@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4xsxw"]
 size = Vector2(257, 64)
 
-[node name="final-door" type="Area2D"]
+[node name="final-door_level_2" type="Area2D"]
 script = ExtResource("1_0f2ia")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -16,3 +16,5 @@ shape = SubResource("RectangleShape2D_4xsxw")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 0.5)
 texture = ExtResource("2_0q3hx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

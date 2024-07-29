@@ -44,8 +44,12 @@ limit_bottom = 1152
 position = Vector2(2177, 353)
 rotation = -1.5708
 
-[node name="final-door" parent="." instance=ExtResource("6_kvrhl")]
-position = Vector2(39, 897)
+[node name="gate" parent="." instance=ExtResource("5_cp7ys")]
+position = Vector2(449, 897)
+rotation = -1.5708
+
+[node name="final-door_level_2" parent="." instance=ExtResource("6_kvrhl")]
+position = Vector2(38, 895)
 rotation = -1.5708
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -92,6 +96,4 @@ position = Vector2(1704, 205)
 [node name="coin12" parent="." instance=ExtResource("8_xvi1m")]
 position = Vector2(2170, 205)
 
-[node name="gate" parent="." instance=ExtResource("5_cp7ys")]
-position = Vector2(437, 900)
-rotation = -1.57079
+[connection signal="body_exited" from="lever" to="gate" method="_on_lever_body_exited"]
