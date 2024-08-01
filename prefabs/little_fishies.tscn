@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqx8oe6nwd1qk"]
+
+[ext_resource type="Texture2D" uid="uid://cvni1m810jui3" path="res://images/pngtree-goldfish-small-fish-school-of-fish-image_2233763-removebg-preview.png" id="1_6wk7j"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_inxlv"]
+radius = 29.5497
+height = 92.9676
+
+[node name="little_fishies" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_6wk7j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.9764
+shape = SubResource("CapsuleShape2D_inxlv")
