@@ -33,7 +33,6 @@ layer_0/tile_data = PackedInt32Array(0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0
 
 [node name="player" parent="." instance=ExtResource("3_rxy33")]
 position = Vector2(251, 204)
-speed = 350
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 limit_left = 0
