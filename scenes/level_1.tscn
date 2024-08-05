@@ -1,36 +1,35 @@
 [gd_scene load_steps=14 format=3 uid="uid://cseuuo0o6u7t8"]
 
-[ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="1_j3lbp"]
 [ext_resource type="Script" path="res://scripts/level_1.gd" id="1_jwugd"]
+[ext_resource type="Texture2D" uid="uid://e8k2l8ls064o" path="res://Sprite-00051.png" id="2_gqu54"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="2_j8gmw"]
 [ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="3_harwg"]
+[ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="3_vj27g"]
 [ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="4_ccgkk"]
 [ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="4_ohkfp"]
 [ext_resource type="PackedScene" uid="uid://dn4ta5j1coqj7" path="res://prefabs/lever.tscn" id="6_6bakt"]
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="8_eqtvl"]
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="9_okrsc"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lpvlo"]
-texture = ExtResource("1_j3lbp")
-separation = Vector2i(5, 0)
-texture_region_size = Vector2i(128, 128)
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wpf46"]
+texture = ExtResource("2_gqu54")
+texture_region_size = Vector2i(124, 124)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cbmwa"]
-load_path = "res://.godot/imported/Sprite-0005.png-ecf278b1119bba1d5e7f1df86c41fbb0.ctex"
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3k4u2"]
-texture = SubResource("CompressedTexture2D_cbmwa")
-texture_region_size = Vector2i(128, 128)
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vp6mi"]
+texture = ExtResource("3_vj27g")
+texture_region_size = Vector2i(124, 124)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSet" id="TileSet_aoxrx"]
-tile_size = Vector2i(128, 128)
+tile_size = Vector2i(124, 124)
 physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_lpvlo")
-sources/2 = SubResource("TileSetAtlasSource_3k4u2")
+sources/1 = SubResource("TileSetAtlasSource_wpf46")
+sources/2 = SubResource("TileSetAtlasSource_vp6mi")
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_jwugd")
@@ -38,7 +37,7 @@ script = ExtResource("1_jwugd")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_aoxrx")
 format = 2
-layer_0/tile_data = PackedInt32Array(131072, 1, 0, 196612, 1, 0, 262148, 1, 0, 327684, 1, 0, 6, 1, 0, 7, 1, 0, 458759, 1, 0, 458760, 1, 0, 589824, 1, 0, 655360, 1, 0, 655361, 1, 0, 655362, 1, 0, 655363, 1, 0, 655364, 1, 0, 655373, 1, 0, 655374, 1, 0, 655375, 1, 0, 196615, 1, 0, 524288, 1, 0, 262159, 1, 0, 524303, 1, 0, 589839, 1, 0, 524302, 1, 0, 589838, 1, 0, 458767, 1, 0, 393231, 1, 0, 327695, 1, 0, 196623, 1, 0, 131087, 1, 0, 65551, 1, 0, 15, 1, 0, 524299, 1, 0, 131080, 1, 0, 8, 1, 0, 458766, 1, 0, 393230, 1, 0, 327694, 1, 0, 524301, 1, 0, 589837, 1, 0, 131079, 1, 0, 196616, 1, 0, 0, 1, 0, 65536, 1, 0, 196608, 1, 0, 262144, 1, 0, 327680, 1, 0, 393216, 1, 0, 458752, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 9, 1, 0, 10, 1, 0, 13, 1, 0, 14, 1, 0, 720896, 1, 0, 720897, 1, 0, 720898, 1, 0, 720899, 1, 0, 720900, 1, 0, 720901, 1, 0, 720902, 1, 0, 720903, 1, 0, 720904, 1, 0, 720905, 1, 0, 720906, 1, 0, 720907, 1, 0, 720908, 1, 0, 720909, 1, 0, 720910, 1, 0, 720911, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 393218, 1, 0, 393219, 1, 0, 393220, 1, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 589829, 1, 0, 655365, 1, 0, 458754, 1, 0, 524290, 1, 0, 262151, 1, 0, 262152, 1, 0, 262153, 1, 0, 262154, 1, 0, 262158, 1, 0, 262157, 1, 0, 327688, 1, 0, 65543, 1, 0, 65544, 1, 0, 524292, 1, 0)
+layer_0/tile_data = PackedInt32Array(131072, 2, 0, 196612, 2, 0, 262148, 2, 0, 327684, 2, 0, 6, 1, 0, 7, 2, 0, 458759, 2, 0, 458760, 2, 0, 589824, 2, 0, 655360, 2, 0, 655361, 2, 0, 655362, 2, 0, 655363, 2, 0, 655364, 2, 0, 655373, 2, 0, 655374, 2, 0, 655375, 2, 0, 196615, 2, 0, 524288, 2, 0, 524303, 2, 0, 589839, 2, 0, 524302, 2, 0, 589838, 2, 0, 458767, 2, 0, 393231, 2, 0, 327695, 2, 0, 196623, 2, 0, 131087, 2, 0, 65551, 2, 0, 15, 2, 0, 524299, 1, 0, 131080, 2, 0, 8, 2, 0, 458766, 2, 0, 393230, 2, 0, 327694, 2, 0, 524301, 2, 0, 589837, 2, 0, 131079, 2, 0, 196616, 2, 0, 0, 2, 0, 65536, 2, 0, 196608, 2, 0, 262144, 2, 0, 327680, 2, 0, 393216, 2, 0, 458752, 2, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 9, 1, 0, 10, 1, 0, 13, 1, 0, 14, 1, 0, 720896, 2, 0, 720897, 2, 0, 720898, 2, 0, 720899, 2, 0, 720900, 2, 0, 720901, 2, 0, 720902, 2, 0, 720903, 2, 0, 720904, 2, 0, 720905, 2, 0, 720906, 2, 0, 720907, 2, 0, 720908, 2, 0, 720909, 2, 0, 720910, 2, 0, 720911, 2, 0, 524293, 2, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 589829, 2, 0, 655365, 2, 0, 458754, 2, 0, 524290, 2, 0, 262151, 2, 0, 262152, 2, 0, 262153, 1, 0, 262154, 1, 0, 262158, 2, 0, 262157, 1, 0, 327688, 2, 0, 65543, 2, 0, 65544, 2, 0, 524292, 2, 0, 262159, 2, 0)
 
 [node name="player" parent="." instance=ExtResource("2_j8gmw")]
 position = Vector2(226, 231)
@@ -50,13 +49,13 @@ limit_right = 2050
 limit_bottom = 1525
 
 [node name="final-door" parent="." instance=ExtResource("3_harwg")]
-position = Vector2(1536, 40)
+position = Vector2(1492, 40)
 
 [node name="gate" parent="." instance=ExtResource("4_ccgkk")]
-position = Vector2(1536, 576)
+position = Vector2(1486, 558)
 
 [node name="lever" parent="." instance=ExtResource("6_6bakt")]
-position = Vector2(479, 651)
+position = Vector2(460, 626)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2
@@ -64,30 +63,30 @@ layer = 2
 [node name="oxgyen_timer" parent="CanvasLayer" instance=ExtResource("4_ohkfp")]
 
 [node name="treasure_chest" parent="." instance=ExtResource("9_okrsc")]
-position = Vector2(874, 1297)
+position = Vector2(853, 1203)
 
 [node name="treasure_chest2" parent="." instance=ExtResource("9_okrsc")]
-position = Vector2(1812, 238)
+position = Vector2(1750, 200)
 rotation = 3.14159
 scale = Vector2(1.08, -1)
 
 [node name="coin" parent="." instance=ExtResource("8_eqtvl")]
-position = Vector2(766, 263)
+position = Vector2(741, 238)
 
 [node name="coin2" parent="." instance=ExtResource("8_eqtvl")]
-position = Vector2(773, 635)
+position = Vector2(748, 611)
 
 [node name="coin3" parent="." instance=ExtResource("8_eqtvl")]
-position = Vector2(774, 952)
+position = Vector2(749, 874)
 
 [node name="coin4" parent="." instance=ExtResource("8_eqtvl")]
-position = Vector2(448, 1208)
+position = Vector2(426, 1175)
 
 [node name="coin5" parent="." instance=ExtResource("8_eqtvl")]
-position = Vector2(194, 986)
+position = Vector2(181, 991)
 
 [node name="coin6" parent="." instance=ExtResource("8_eqtvl")]
-position = Vector2(374, 648)
+position = Vector2(322, 648)
 
 [node name="coin7" parent="." instance=ExtResource("8_eqtvl")]
 position = Vector2(1595, 1198)
