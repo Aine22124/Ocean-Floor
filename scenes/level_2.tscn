@@ -50,7 +50,7 @@ limit_right = 2432
 limit_bottom = 1152
 
 [node name="lever" parent="." instance=ExtResource("4_a778n")]
-position = Vector2(2113, 353)
+position = Vector2(2113, 333)
 rotation = -1.5708
 
 [node name="gate" parent="." instance=ExtResource("5_cp7ys")]

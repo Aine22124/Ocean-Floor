@@ -17,6 +17,7 @@ texture_region_size = Vector2i(124, 124)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-62, -62, 62, -62, 62, 62, -62, 62)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vp6mi"]
 texture = ExtResource("3_vj27g")
@@ -24,6 +25,7 @@ texture_region_size = Vector2i(124, 124)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-62, -62, 62, -62, 62, 62, -62, 62)
 
 [sub_resource type="TileSet" id="TileSet_aoxrx"]
 tile_size = Vector2i(124, 124)
@@ -92,7 +94,7 @@ position = Vector2(322, 648)
 position = Vector2(1595, 1198)
 
 [node name="coin8" parent="." instance=ExtResource("8_eqtvl")]
-position = Vector2(1535, 466)
+position = Vector2(1483, 416)
 
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
