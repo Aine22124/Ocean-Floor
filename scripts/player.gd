@@ -1,12 +1,9 @@
 extends CharacterBody2D
-
+class_name player
 
 @export var speed = 350
 var PlayerDirection: Vector2 = Vector2.ZERO
 var move = Vector2.ZERO
-
-func _ready():
-	pass
 
 func get_input():
 	var input_dir = Input.get_vector("player_left", "player_right", "player_up", "player_down")
@@ -17,6 +14,11 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	move_and_slide()
+
+
+
+
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

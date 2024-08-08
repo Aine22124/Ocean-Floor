@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpqjthnshprlu"
-path="res://.godot/imported/scuba-diver-idea.PNG-ad5890e06af9f71efa64300080f38441.ctex"
+uid="uid://e8k2l8ls064o"
+path="res://.godot/imported/Sprite-00051.png-6334962f999b1c584229341b91c2af26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://prefabs/scuba-diver-idea.PNG"
-dest_files=["res://.godot/imported/scuba-diver-idea.PNG-ad5890e06af9f71efa64300080f38441.ctex"]
+source_file="res://images/Sprite-00051.png"
+dest_files=["res://.godot/imported/Sprite-00051.png-6334962f999b1c584229341b91c2af26.ctex"]
 
 [params]
 
