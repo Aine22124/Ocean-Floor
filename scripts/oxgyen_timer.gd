@@ -3,10 +3,11 @@ extends Node
 
 @onready var label = $label
 @onready var timer = $label/timer
+#@onready Autoload = "res://scripts/Autoload.gd"
 signal oxygen_0
 
 func _ready():
-	timer.set_wait_time(Autoload.TimeDuration)
+	$label/timer.set_wait_time(Autoload.TimeDuration)
 	timer.start
 
 func time_left_to_live():

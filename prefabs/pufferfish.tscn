@@ -13,7 +13,6 @@ point_count = 3
 
 [node name="pufferfish" type="Node2D"]
 script = ExtResource("1_7alat")
-metadata/_edit_group_ = true
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_5jjvx")
