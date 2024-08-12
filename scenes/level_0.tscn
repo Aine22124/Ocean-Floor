@@ -1,0 +1,77 @@
+[gd_scene load_steps=14 format=3 uid="uid://m3wre2antd3f"]
+
+[ext_resource type="Script" path="res://scripts/level_1.gd" id="1_1q6q0"]
+[ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="2_fhkfe"]
+[ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="3_uase1"]
+[ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="4_ot4sh"]
+[ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="5_wrl0i"]
+[ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="6_jcavr"]
+[ext_resource type="PackedScene" uid="uid://dn4ta5j1coqj7" path="res://prefabs/lever.tscn" id="7_20egn"]
+[ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="8_41alx"]
+[ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="9_0nny1"]
+[ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="10_kbtir"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ek4h"]
+texture = ExtResource("2_fhkfe")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v5g5n"]
+texture = ExtResource("3_uase1")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
+[sub_resource type="TileSet" id="TileSet_aoxrx"]
+tile_size = Vector2i(120, 120)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_4ek4h")
+sources/1 = SubResource("TileSetAtlasSource_v5g5n")
+
+[node name="level_1" type="Node2D"]
+script = ExtResource("1_1q6q0")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_aoxrx")
+format = 2
+layer_0/tile_data = PackedInt32Array(131072, 1, 0, 0, 1, 0, 65536, 1, 0, 196608, 1, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 1, 0, 65542, 1, 0, 131078, 1, 0, 196614, 1, 0, 262150, 1, 0, 262149, 0, 0, 262145, 0, 0, 262144, 1, 0, 262146, 0, 0, 327680, 1, 0, 393216, 1, 0, 458752, 1, 0, 458753, 0, 0, 458757, 0, 0, 458758, 1, 0, 393222, 1, 0, 327686, 1, 0)
+
+[node name="player" parent="." instance=ExtResource("4_ot4sh")]
+position = Vector2(240, 207)
+metadata/_edit_group_ = true
+
+[node name="screen-camera" type="Camera2D" parent="player"]
+zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_top = 0
+limit_right = 1000
+limit_bottom = 960
+
+[node name="final-door" parent="." instance=ExtResource("5_wrl0i")]
+position = Vector2(420, 922)
+
+[node name="gate" parent="." instance=ExtResource("6_jcavr")]
+position = Vector2(477, 537)
+
+[node name="lever" parent="." instance=ExtResource("7_20egn")]
+position = Vector2(241, 447)
+rotation = 1.5708
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="oxgyen_timer" parent="CanvasLayer" instance=ExtResource("8_41alx")]
+
+[node name="treasure_chest" parent="." instance=ExtResource("9_0nny1")]
+position = Vector2(212, 683)
+
+[node name="coin" parent="." instance=ExtResource("10_kbtir")]
+position = Vector2(470, 233)
+
+[connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
+[connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]

@@ -16,4 +16,4 @@ shape = SubResource("CircleShape2D_4fxdn")
 scale = Vector2(2, 2)
 texture = ExtResource("1_wmwg0")
 
-[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

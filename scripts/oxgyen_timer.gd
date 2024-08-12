@@ -1,13 +1,13 @@
 extends Node
 
 
-@onready var label = $label
-@onready var timer = $label/timer
+@onready var label = $oxygen
+@onready var timer = $oxygen/timer
 #@onready Autoload = "res://scripts/Autoload.gd"
 signal oxygen_0
 
 func _ready():
-	$label/timer.set_wait_time(Autoload.TimeDuration)
+	$oxygen/timer.set_wait_time(Autoload.TimeDuration)
 	timer.start
 
 func time_left_to_live():
@@ -22,3 +22,7 @@ func _process(delta):
 
 func _on_timer_timeout():
 	get_tree().change_scene_to_file("res://scenes/dead_screen.tscn")
+	
+	
+func set_coins(numcoins):
+	$points.text = "Coins: " + str(numcoins)
