@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://ce1rv1ko2uyeb"]
 
-[ext_resource type="Script" path="res://scripts/scene_2.gd" id="1_b2qvc"]
+[ext_resource type="Script" path="res://scripts/level_3.gd" id="1_b2qvc"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="2_0vdhx"]
 [ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/Sprite-00010.png" id="2_4jdg6"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="3_tis58"]
@@ -130,3 +130,16 @@ rotation = 3.14159
 position = Vector2(1434, 639)
 
 [connection signal="body_exited" from="lever" to="gate" method="_on_lever_body_exited"]
+[connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
+[connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
+[connection signal="coin_picked_up" from="coin2" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin3" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin4" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin5" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin6" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin7" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin8" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin9" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin10" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin11" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin12" to="." method="_on_coin_coin_picked_up"]
