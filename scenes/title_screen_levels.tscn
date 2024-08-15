@@ -34,7 +34,7 @@ columns = 2
 [node name="level_0_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "level 0"
+text = "Trial Level"
 
 [node name="level_1_button" type="Button" parent="GridContainer"]
 layout_mode = 2
@@ -55,13 +55,13 @@ text = "Level 3
 [node name="level_4_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "coming soon!
+text = "Coming soon!
 "
 
 [node name="level_5_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "coming soon!"
+text = "          ???          "
 
 [node name="level_6_button" type="Button" parent="GridContainer"]
 layout_mode = 2
