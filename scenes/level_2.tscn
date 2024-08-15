@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://daawhgpmnce28"]
+[gd_scene load_steps=18 format=3 uid="uid://daawhgpmnce28"]
 
-[ext_resource type="Script" path="res://scripts/level_1.gd" id="1_ksto6"]
+[ext_resource type="Script" path="res://scripts/level_2.gd" id="1_0tt47"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="2_ag7sa"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="3_rxy33"]
+[ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/Sprite-00010.png" id="4_84mgm"]
 [ext_resource type="PackedScene" uid="uid://dn4ta5j1coqj7" path="res://prefabs/lever.tscn" id="4_a778n"]
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="4_rd8d4"]
 [ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="5_ck1rp"]
@@ -11,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="8_xvi1m"]
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="9_qr0ue"]
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="11_55aun"]
+[ext_resource type="PackedScene" uid="uid://cxdg56u8mgvam" path="res://prefabs/pufferfish.tscn" id="12_hi5jc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ek4h"]
 texture = ExtResource("4_rd8d4")
@@ -28,18 +30,28 @@ texture_region_size = Vector2i(120, 120)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cpfkh"]
+texture = ExtResource("4_84mgm")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
 [sub_resource type="TileSet" id="TileSet_aoxrx"]
 tile_size = Vector2i(120, 120)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4ek4h")
 sources/1 = SubResource("TileSetAtlasSource_v5g5n")
+sources/2 = SubResource("TileSetAtlasSource_cpfkh")
 
-[node name="level_1" type="Node2D"]
-script = ExtResource("1_ksto6")
+[node name="level_2" type="Node2D"]
+script = ExtResource("1_0tt47")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_aoxrx")
 format = 2
+layer_0/tile_data = PackedInt32Array(0, 1, 0, 65536, 1, 0, 131072, 1, 0, 196608, 1, 0, 65539, 1, 0, 131075, 1, 0, 196611, 1, 0, 262147, 1, 0, 327683, 1, 0, 327682, 1, 0, 393218, 1, 0, 262144, 1, 0, 327680, 1, 0, 393216, 1, 0, 458752, 1, 0, 524288, 1, 0, 524289, 1, 0, 524290, 1, 0, 524291, 1, 0, 524292, 1, 0, 458756, 1, 0, 7, 2, 0, 196615, 1, 0, 262151, 1, 0, 327687, 1, 0, 6, 0, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 655360, 1, 0, 655361, 1, 0, 655362, 1, 0, 655363, 1, 0, 655364, 1, 0, 458757, 2, 0, 458758, 0, 0, 458759, 2, 0, 393223, 1, 0, 458762, 2, 0, 458763, 0, 0, 458764, 1, 0, 8, 0, 0, 9, 2, 0, 10, 1, 0, 65546, 1, 0, 131082, 1, 0, 196618, 1, 0, 524300, 1, 0, 589836, 1, 0, 655372, 1, 0, 655365, 1, 0, 655366, 1, 0, 655367, 1, 0, 655370, 1, 0, 655371, 1, 0, 393227, 1, 0, 11, 1, 0, 65547, 1, 0, 131083, 1, 0, 196619, 1, 0, 262155, 1, 0, 327691, 1, 0, 196612, 2, 0, 1, 2, 0, 2, 2, 0, 3, 1, 0, 4, 0, 0, 5, 2, 0)
 
 [node name="player" parent="." instance=ExtResource("3_rxy33")]
 position = Vector2(226, 231)
@@ -52,13 +64,14 @@ limit_right = 2050
 limit_bottom = 1525
 
 [node name="final-door" parent="." instance=ExtResource("5_ck1rp")]
-position = Vector2(1441, 35)
+position = Vector2(1086, 1290)
 
 [node name="gate" parent="." instance=ExtResource("5_cp7ys")]
-position = Vector2(1443, 543)
+position = Vector2(1085, 421)
 
 [node name="lever" parent="." instance=ExtResource("4_a778n")]
-position = Vector2(460, 626)
+position = Vector2(1025, 115)
+rotation = 1.5708
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2
@@ -66,57 +79,54 @@ layer = 2
 [node name="oxgyen_timer" parent="CanvasLayer" instance=ExtResource("7_7e6fu")]
 
 [node name="treasure_chest" parent="." instance=ExtResource("9_qr0ue")]
-position = Vector2(820, 1158)
+position = Vector2(582, 188)
 
 [node name="treasure_chest2" parent="." instance=ExtResource("9_qr0ue")]
-position = Vector2(1710, 181)
-rotation = 3.14159
-scale = Vector2(1.08, -1)
+position = Vector2(703, 1052)
+rotation = 3.15068
+scale = Vector2(-1.03011, -1.043)
 
 [node name="coin" parent="." instance=ExtResource("8_xvi1m")]
-position = Vector2(701, 219)
+position = Vector2(223, 434)
 
 [node name="coin2" parent="." instance=ExtResource("8_xvi1m")]
-position = Vector2(708, 592)
+position = Vector2(1080, 274)
 
 [node name="coin3" parent="." instance=ExtResource("8_xvi1m")]
-position = Vector2(709, 855)
+position = Vector2(1081, 1058)
 
 [node name="coin4" parent="." instance=ExtResource("8_xvi1m")]
-position = Vector2(416, 1130)
+position = Vector2(561, 646)
 
 [node name="coin5" parent="." instance=ExtResource("8_xvi1m")]
-position = Vector2(177, 959)
+position = Vector2(182, 888)
 
-[node name="coin6" parent="." instance=ExtResource("8_xvi1m")]
-position = Vector2(318, 617)
-
-[node name="coin7" parent="." instance=ExtResource("8_xvi1m")]
-position = Vector2(1495, 1147)
-
-[node name="coin8" parent="." instance=ExtResource("8_xvi1m")]
-position = Vector2(1483, 416)
+[node name="pufferfish" parent="." instance=ExtResource("12_hi5jc")]
+position = Vector2(802, 643)
+rotation = 1.5708
 
 [node name="Rock2" type="Sprite2D" parent="."]
-position = Vector2(1172, 631)
+position = Vector2(1360, 964)
 rotation = -0.0107364
 scale = Vector2(2.64061, 2.43361)
 skew = -0.000913262
 texture = ExtResource("11_55aun")
 
+[node name="Rock3" type="Sprite2D" parent="."]
+position = Vector2(1263.93, 498.58)
+scale = Vector2(1.87283, 1.6968)
+texture = ExtResource("11_55aun")
+
 [node name="Rock1" type="Sprite2D" parent="."]
-position = Vector2(786, 130)
+position = Vector2(178, 139)
 scale = Vector2(1.625, 1.56)
 texture = ExtResource("11_55aun")
 
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
-[connection signal="treasure_chest_opened" from="treasure_chest2" to="." method="_on_treasure_chest_2_treasure_chest_opened"]
+[connection signal="treasure_chest_opened" from="treasure_chest2" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
-[connection signal="coin_picked_up" from="coin2" to="." method="_on_coin_2_coin_picked_up"]
-[connection signal="coin_picked_up" from="coin3" to="." method="_on_coin_3_coin_picked_up"]
-[connection signal="coin_picked_up" from="coin4" to="." method="_on_coin_4_coin_picked_up"]
-[connection signal="coin_picked_up" from="coin5" to="." method="_on_coin_5_coin_picked_up"]
-[connection signal="coin_picked_up" from="coin6" to="." method="_on_coin_6_coin_picked_up"]
-[connection signal="coin_picked_up" from="coin7" to="." method="_on_coin_7_coin_picked_up"]
-[connection signal="coin_picked_up" from="coin8" to="." method="_on_coin_8_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin2" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin3" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin4" to="." method="_on_coin_coin_picked_up"]
+[connection signal="coin_picked_up" from="coin5" to="." method="_on_coin_coin_picked_up"]

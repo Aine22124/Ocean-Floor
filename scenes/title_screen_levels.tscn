@@ -31,6 +31,11 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 30
 columns = 2
 
+[node name="level_0_button" type="Button" parent="GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "level 0"
+
 [node name="level_1_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
@@ -39,13 +44,12 @@ text = "Level 1"
 [node name="level_2_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 2
-"
+text = "Level 2"
 
 [node name="level_3_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "coming soon!
+text = "Level 3
 "
 
 [node name="level_4_button" type="Button" parent="GridContainer"]
@@ -65,11 +69,6 @@ theme_override_font_sizes/font_size = 30
 text = "???"
 
 [node name="level_7_button" type="Button" parent="GridContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "???"
-
-[node name="level_8_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "???"
@@ -94,5 +93,7 @@ position = Vector2(-4, 0)
 texture = ExtResource("1_rfnde")
 offset = Vector2(30, 0)
 
+[connection signal="pressed" from="GridContainer/level_0_button" to="." method="_on_level_0_button_pressed"]
 [connection signal="pressed" from="GridContainer/level_1_button" to="." method="_on_level_1_button_pressed"]
 [connection signal="pressed" from="GridContainer/level_2_button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="GridContainer/level_3_button" to="." method="_on_level_3_button_pressed"]

@@ -1,15 +1,9 @@
 extends Node
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
+func _on_level_0_button_pressed():
+	#press the level 0 button to change the scene to level 0
+	get_tree().change_scene_to_file("res://scenes/level_0.tscn")
 
 func _on_level_1_button_pressed():
 	#press the level 1 button to change the scene to level 1
@@ -19,4 +13,6 @@ func _on_level_2_button_pressed():
 	#press the level 2 button to change the scene to level 2
 	get_tree().change_scene_to_file("res://scenes/level_2.tscn")
 
-
+func _on_level_3_button_pressed():
+	#press the level 3 button to change the scene to level 3
+	get_tree().change_scene_to_file("res://scenes/level_3.tscn")

@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkuak5j58enbj"]
+[gd_scene load_steps=4 format=3 uid="uid://bkuak5j58enbj"]
 
 [ext_resource type="Script" path="res://scripts/dead_screen.gd" id="1_n76rl"]
+[ext_resource type="Texture2D" uid="uid://6p318cbw1vf2" path="res://images/Sprite-00011.png" id="2_ola1o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2ejd"]
 
 [node name="dead_screen" type="Control"]
 layout_mode = 3
@@ -60,5 +63,25 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
 text = "Try again?"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_u2ejd")
+
+[node name="Sprite-00011" type="Sprite2D" parent="PanelContainer"]
+position = Vector2(333, 37)
+scale = Vector2(2.525, 2.525)
+texture = ExtResource("2_ola1o")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

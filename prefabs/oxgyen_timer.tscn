@@ -13,28 +13,26 @@ script = ExtResource("1_4ph1c")
 
 [node name="oxygen" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -101.0
-offset_right = 101.0
+offset_right = 506.0
 offset_bottom = 96.0
-grow_horizontal = 2
 theme_override_font_sizes/font_size = 70
-text = "00:00"
+text = "Oxygen:  00:00"
 horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="timer" type="Timer" parent="oxygen"]
-wait_time = 60.0
+wait_time = 70.0
 one_shot = true
 autostart = true
 
 [node name="points" type="Label" parent="."]
 layout_mode = 1
-offset_left = 28.0
-offset_right = 481.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -558.0
 offset_bottom = 96.0
+grow_horizontal = 0
 theme_override_font_sizes/font_size = 70
 text = "Coins:"
 
