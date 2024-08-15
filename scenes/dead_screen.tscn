@@ -45,7 +45,7 @@ offset_bottom = -36.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 125
-text = "Times up!"
+text = "Time's up!"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
