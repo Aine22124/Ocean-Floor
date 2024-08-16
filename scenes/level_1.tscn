@@ -18,14 +18,15 @@
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="9_okrsc"]
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="11_r6lyp"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_58b1e"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o84vv"]
 texture = ExtResource("3_vj27g")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3jffe"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_spwa6"]
 texture = ExtResource("2_ycnqa")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
@@ -33,7 +34,7 @@ texture_region_size = Vector2i(120, 120)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lp3wl"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ttkd"]
 texture = ExtResource("4_5udsw")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
@@ -41,39 +42,39 @@ texture_region_size = Vector2i(120, 120)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6vrno"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txqeh"]
 texture = ExtResource("6_q3g7i")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-35, -60, 34, -60, 36, 60, -34, 60)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31, -60, 36, -60, 35, 60, -33, 60)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_owmfb"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_01xlt"]
 texture = ExtResource("5_3ntux")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-33, -60, 36, -60, 38, 60, -33, 60)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-34, -60, 32, -60, 33, 60, -37, 60)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4tp23"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ftvly"]
 texture = ExtResource("4_abxm3")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 33, -60, 34, 60, -60, 60)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 35, -60, 34, 60, -60, 60)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wjp02"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_udwfh"]
 texture = ExtResource("8_peg8p")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-33, -60, 60, -60, 60, 60, -32, 60)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31, -60, 60, -60, 60, 60, -34, 60)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6v6cs"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fxpsm"]
 texture = ExtResource("7_miq0p")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
@@ -84,14 +85,14 @@ texture_region_size = Vector2i(120, 120)
 [sub_resource type="TileSet" id="TileSet_aoxrx"]
 tile_size = Vector2i(120, 120)
 physics_layer_0/collision_layer = 1
-sources/11 = SubResource("TileSetAtlasSource_58b1e")
-sources/12 = SubResource("TileSetAtlasSource_3jffe")
-sources/13 = SubResource("TileSetAtlasSource_lp3wl")
-sources/14 = SubResource("TileSetAtlasSource_6vrno")
-sources/15 = SubResource("TileSetAtlasSource_owmfb")
-sources/16 = SubResource("TileSetAtlasSource_4tp23")
-sources/17 = SubResource("TileSetAtlasSource_wjp02")
-sources/18 = SubResource("TileSetAtlasSource_6v6cs")
+sources/0 = SubResource("TileSetAtlasSource_o84vv")
+sources/1 = SubResource("TileSetAtlasSource_spwa6")
+sources/2 = SubResource("TileSetAtlasSource_5ttkd")
+sources/3 = SubResource("TileSetAtlasSource_txqeh")
+sources/4 = SubResource("TileSetAtlasSource_01xlt")
+sources/5 = SubResource("TileSetAtlasSource_ftvly")
+sources/6 = SubResource("TileSetAtlasSource_udwfh")
+sources/7 = SubResource("TileSetAtlasSource_fxpsm")
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_jwugd")
@@ -99,7 +100,7 @@ script = ExtResource("1_jwugd")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_aoxrx")
 format = 2
-layer_0/tile_data = PackedInt32Array(131072, 11, 0, 262148, 15, 0, 327684, 15, 0, 6, 13, 0, 7, 18, 0, 458759, 1, 0, 458760, 1, 0, 589824, 11, 0, 655360, 11, 0, 655361, 11, 0, 655362, 11, 0, 655363, 11, 0, 655364, 11, 0, 655373, 15, 0, 655374, 11, 0, 655375, 11, 0, 196615, 15, 0, 524288, 11, 0, 524303, 11, 0, 589839, 11, 0, 524302, 11, 0, 589838, 11, 0, 458767, 11, 0, 393231, 11, 0, 327695, 11, 0, 196623, 11, 0, 131087, 11, 0, 65551, 11, 0, 15, 11, 0, 524299, 13, 0, 131080, 15, 0, 8, 18, 0, 458766, 15, 0, 393230, 15, 0, 327694, 15, 0, 524301, 15, 0, 589837, 15, 0, 131079, 15, 0, 196616, 15, 0, 0, 11, 0, 65536, 11, 0, 196608, 11, 0, 262144, 11, 0, 327680, 11, 0, 393216, 11, 0, 458752, 11, 0, 1, 13, 0, 2, 12, 0, 3, 13, 0, 4, 13, 0, 5, 12, 0, 9, 12, 0, 10, 13, 0, 13, 13, 0, 14, 12, 0, 720896, 11, 0, 720897, 11, 0, 720898, 11, 0, 720899, 11, 0, 720900, 11, 0, 720901, 11, 0, 720902, 11, 0, 720903, 11, 0, 720904, 11, 0, 720905, 11, 0, 720906, 11, 0, 720907, 11, 0, 720908, 11, 0, 720909, 11, 0, 720910, 11, 0, 720911, 11, 0, 524293, 11, 0, 524294, 13, 0, 524295, 12, 0, 524296, 13, 0, 524297, 13, 0, 524298, 12, 0, 393218, 17, 0, 393219, 13, 0, 393220, 16, 0, 196609, 13, 0, 196610, 12, 0, 196611, 13, 0, 589829, 17, 0, 655365, 11, 0, 262151, 14, 0, 262152, 18, 0, 262153, 12, 0, 262154, 13, 0, 262158, 12, 0, 262157, 13, 0, 327688, 14, 0, 65543, 15, 0, 65544, 15, 0, 524292, 11, 0, 262159, 11, 0, 458754, 15, 0, 524290, 14, 0, 196612, 16, 0)
+layer_0/tile_data = PackedInt32Array(131072, 0, 0, 262148, 4, 0, 327684, 4, 0, 6, 2, 0, 7, 7, 0, 458759, 0, 0, 458760, 0, 0, 589824, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655373, 4, 0, 655374, 0, 0, 655375, 0, 0, 196615, 4, 0, 524288, 0, 0, 524303, 0, 0, 589839, 0, 0, 524302, 0, 0, 589838, 0, 0, 458767, 0, 0, 393231, 0, 0, 327695, 0, 0, 196623, 0, 0, 131087, 0, 0, 65551, 0, 0, 15, 0, 0, 524299, 2, 0, 131080, 4, 0, 8, 7, 0, 458766, 4, 0, 393230, 4, 0, 327694, 4, 0, 524301, 4, 0, 589837, 4, 0, 131079, 4, 0, 196616, 4, 0, 0, 0, 0, 65536, 0, 0, 196608, 0, 0, 262144, 0, 0, 327680, 0, 0, 393216, 0, 0, 458752, 0, 0, 1, 2, 0, 2, 1, 0, 3, 2, 0, 4, 2, 0, 5, 1, 0, 9, 1, 0, 10, 2, 0, 13, 2, 0, 14, 1, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 720910, 0, 0, 720911, 0, 0, 524293, 7, 0, 524294, 2, 0, 524295, 1, 0, 524296, 2, 0, 524297, 2, 0, 524298, 1, 0, 393218, 6, 0, 393219, 2, 0, 393220, 1, 0, 196609, 2, 0, 196610, 1, 0, 196611, 2, 0, 589829, 4, 0, 655365, 4, 0, 262151, 3, 0, 262152, 7, 0, 262153, 1, 0, 262154, 2, 0, 262158, 5, 0, 262157, 2, 0, 327688, 3, 0, 65543, 4, 0, 65544, 4, 0, 524292, 2, 0, 262159, 0, 0, 458754, 4, 0, 524290, 3, 0, 196612, 5, 0)
 
 [node name="player" parent="." instance=ExtResource("2_j8gmw")]
 position = Vector2(226, 231)
@@ -169,6 +170,7 @@ position = Vector2(786, 130)
 scale = Vector2(1.625, 1.56)
 texture = ExtResource("11_r6lyp")
 
+[connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="treasure_chest_opened" from="treasure_chest2" to="." method="_on_coin_coin_picked_up"]

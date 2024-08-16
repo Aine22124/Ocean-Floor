@@ -16,3 +16,7 @@ func _on_treasure_chest_treasure_chest_opened():
 	points = points + 5
 	$CanvasLayer/oxgyen_timer.set_coins(points)
 
+
+
+func _on_finaldoor_door_entered():
+	get_tree().change_scene_to_file("res://scenes/level_3.tscn")

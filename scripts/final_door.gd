@@ -1,6 +1,6 @@
 extends Area2D
-
+signal door_entered
 
 func _on_body_entered(body: PhysicsBody2D):
-	get_tree().change_scene_to_file("res://scenes/level_2.tscn")
+	door_entered.emit()
 	
