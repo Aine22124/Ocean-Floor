@@ -5,14 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/Sprite-00010.png" id="2_4jdg6"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="3_tis58"]
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="4_dequ5"]
-[ext_resource type="Texture2D" uid="uid://dxxao61f7t7sn" path="res://images/Sprite-00013.png" id="5_7bvc0"]
 [ext_resource type="PackedScene" uid="uid://q0po87qhiry0" path="res://prefabs/lever.tscn" id="6_adlqg"]
-[ext_resource type="Texture2D" uid="uid://dfkjnw1rh8jhl" path="res://images/Sprite-00015.png" id="6_ua4kk"]
 [ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="7_e2605"]
-[ext_resource type="Texture2D" uid="uid://dtwkeut475okg" path="res://images/Sprite-00016.png" id="7_i0jyj"]
-[ext_resource type="Texture2D" uid="uid://bcy1wjnjgksxl" path="res://images/Sprite-00017.png" id="8_jckdn"]
 [ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="9_0jba2"]
-[ext_resource type="Texture2D" uid="uid://bccqdvghosrr3" path="res://images/Sprite-00018.png" id="9_v6apd"]
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="10_akv7w"]
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="11_xxqs8"]
 [ext_resource type="PackedScene" uid="uid://cxdg56u8mgvam" path="res://prefabs/pufferfish.tscn" id="12_cihk5"]
@@ -42,40 +37,55 @@ texture_region_size = Vector2i(120, 120)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_btsvq"]
+load_path = "res://.godot/imported/Sprite-00013.png-3cc951250f8b2799ce9ab8b83a088808.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7fdn1"]
-texture = ExtResource("5_7bvc0")
+texture = SubResource("CompressedTexture2D_btsvq")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-34, -60, 35, -60, 32, 60, -37, 60)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a6jpe"]
+load_path = "res://.godot/imported/Sprite-00012.png-373d41acbdeda951d393728aa9d02c70.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhlr0"]
-texture = ExtResource("6_ua4kk")
+texture = SubResource("CompressedTexture2D_a6jpe")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-33, -60, 37, -60, 33, 60, -38, 60)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r348f"]
+load_path = "res://.godot/imported/Sprite-00016.png-29f131dfa3b3c33e916ff677be0367a5.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_01hrn"]
-texture = ExtResource("7_i0jyj")
+texture = SubResource("CompressedTexture2D_r348f")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4tbvg"]
+load_path = "res://.godot/imported/Sprite-00017.png-adc98c8e4c566b28bc350218d1e63779.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vjnml"]
-texture = ExtResource("8_jckdn")
+texture = SubResource("CompressedTexture2D_4tbvg")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -60, 60, -60, 60, 60, -37, 60)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vxdf2"]
+load_path = "res://.godot/imported/Sprite-00018.png-484d5d73cedc2016e8b2ba624be2d4b6.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qprut"]
-texture = ExtResource("9_v6apd")
+texture = SubResource("CompressedTexture2D_vxdf2")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)

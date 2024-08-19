@@ -1,20 +1,22 @@
-[gd_scene load_steps=28 format=3 uid="uid://cvk57h0abbr2p"]
+[gd_scene load_steps=32 format=3 uid="uid://cvk57h0abbr2p"]
 
 [ext_resource type="Script" path="res://scripts/level_4.gd" id="1_m1s3x"]
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="2_85pku"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="3_t0org"]
 [ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/Sprite-00010.png" id="4_jmgwj"]
-[ext_resource type="Texture2D" uid="uid://dxxao61f7t7sn" path="res://images/Sprite-00013.png" id="4_qdea1"]
+[ext_resource type="Texture2D" uid="uid://bcqpd6vm434lh" path="res://images/Sprite-00013.png" id="4_qdea1"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="5_4vcn2"]
-[ext_resource type="Texture2D" uid="uid://dfkjnw1rh8jhl" path="res://images/Sprite-00015.png" id="5_mb216"]
+[ext_resource type="Texture2D" uid="uid://dcq148ldjvqb0" path="res://images/Sprite-00012.png" id="6_g863c"]
 [ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="6_mgvvp"]
-[ext_resource type="Texture2D" uid="uid://dtwkeut475okg" path="res://images/Sprite-00016.png" id="6_u6u3v"]
-[ext_resource type="Texture2D" uid="uid://bcy1wjnjgksxl" path="res://images/Sprite-00017.png" id="7_eudf0"]
+[ext_resource type="Texture2D" uid="uid://bh7a6gdtbon1x" path="res://images/Sprite-00016.png" id="6_u6u3v"]
+[ext_resource type="Texture2D" uid="uid://bengpig0vpi81" path="res://images/Sprite-00017.png" id="7_eudf0"]
 [ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="7_rum84"]
 [ext_resource type="PackedScene" uid="uid://q0po87qhiry0" path="res://prefabs/lever.tscn" id="8_gl4pn"]
-[ext_resource type="Texture2D" uid="uid://bccqdvghosrr3" path="res://images/Sprite-00018.png" id="8_k0u7j"]
+[ext_resource type="Texture2D" uid="uid://dgripx0cv10sd" path="res://images/Sprite-00018.png" id="8_k0u7j"]
 [ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="9_ub3h4"]
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="10_sahw0"]
+[ext_resource type="Texture2D" uid="uid://ryex6chg42mn" path="res://images/Sprite-00019.png" id="10_srgsq"]
+[ext_resource type="Texture2D" uid="uid://cfodov8xa5imj" path="res://images/Sprite-00020.png" id="11_4hf84"]
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="11_27hpp"]
 [ext_resource type="PackedScene" uid="uid://cxdg56u8mgvam" path="res://prefabs/pufferfish.tscn" id="12_42uwj"]
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="12_dcmin"]
@@ -52,12 +54,12 @@ texture_region_size = Vector2i(120, 120)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31, -60, 33, -60, 34, 60, -34, 60)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22a67"]
-texture = ExtResource("5_mb216")
+texture = ExtResource("6_g863c")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-33, -60, 35, -60, 36, 60, -37, 60)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31, -60, 33, -60, 34, 60, -35, 60)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d4ncn"]
 texture = ExtResource("6_u6u3v")
@@ -83,6 +85,22 @@ texture_region_size = Vector2i(120, 120)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 32, -60, 34, 60, -60, 60)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5m18g"]
+texture = ExtResource("10_srgsq")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j64aq"]
+texture = ExtResource("11_4hf84")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
 [sub_resource type="TileSet" id="TileSet_aoxrx"]
 tile_size = Vector2i(120, 120)
 physics_layer_0/collision_layer = 1
@@ -94,6 +112,8 @@ sources/4 = SubResource("TileSetAtlasSource_22a67")
 sources/5 = SubResource("TileSetAtlasSource_d4ncn")
 sources/6 = SubResource("TileSetAtlasSource_n3jrl")
 sources/7 = SubResource("TileSetAtlasSource_3r504")
+sources/8 = SubResource("TileSetAtlasSource_5m18g")
+sources/9 = SubResource("TileSetAtlasSource_j64aq")
 
 [node name="level_4" type="Node2D"]
 script = ExtResource("1_m1s3x")
