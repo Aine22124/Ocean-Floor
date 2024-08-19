@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="5_wrl0i"]
 [ext_resource type="Texture2D" uid="uid://dfkjnw1rh8jhl" path="res://images/Sprite-00015.png" id="6_4ie0t"]
 [ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="6_jcavr"]
-[ext_resource type="PackedScene" uid="uid://dn4ta5j1coqj7" path="res://prefabs/lever.tscn" id="7_20egn"]
+[ext_resource type="PackedScene" uid="uid://q0po87qhiry0" path="res://prefabs/lever.tscn" id="7_20egn"]
 [ext_resource type="Texture2D" uid="uid://bccqdvghosrr3" path="res://images/Sprite-00018.png" id="7_eg5ix"]
 [ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="8_41alx"]
 [ext_resource type="Texture2D" uid="uid://bcy1wjnjgksxl" path="res://images/Sprite-00017.png" id="8_yc7mm"]
@@ -98,7 +98,7 @@ script = ExtResource("1_mwxxt")
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xocca")
 format = 2
-layer_0/tile_data = PackedInt32Array(2, 12, 0, 5, 12, 0, 1, 13, 0, 3, 13, 0, 4, 13, 0, 6, 13, 0, 7, 16, 0, 65543, 15, 0, 131079, 15, 0, 196615, 15, 0, 327687, 15, 0, 393223, 15, 0, 393216, 15, 0, 327680, 15, 0, 196608, 15, 0, 131072, 15, 0, 65536, 15, 0, 262144, 17, 0, 0, 17, 0, 458752, 14, 0, 458759, 14, 0, 458753, 12, 0, 458758, 12, 0, 458754, 13, 0, 458757, 13, 0, 262151, 16, 0, 262145, 12, 0, 262150, 12, 0, 262146, 13, 0, 262149, 13, 0)
+layer_0/tile_data = PackedInt32Array(2, 12, 0, 5, 12, 0, 1, 13, 0, 3, 13, 0, 4, 13, 0, 6, 13, 0, 7, 16, 0, 65543, 15, 0, 131079, 15, 0, 196615, 15, 0, 327687, 15, 0, 393223, 15, 0, 393216, 15, 0, 327680, 15, 0, 196608, 15, 0, 131072, 15, 0, 65536, 15, 0, 262144, 17, 0, 0, 17, 0, 458752, 14, 0, 458759, 14, 0, 458753, 14, 0, 458758, 14, 0, 458754, 14, 0, 458757, 14, 0, 262151, 16, 0, 262145, 12, 0, 262150, 12, 0, 262146, 13, 0, 262149, 13, 0)
 
 [node name="player" parent="." instance=ExtResource("4_ot4sh")]
 position = Vector2(240, 207)

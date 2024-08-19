@@ -19,4 +19,4 @@ func _on_treasure_chest_treasure_chest_opened():
 
 
 func _on_finaldoor_door_entered():
-	get_tree().change_scene_to_file("res://scenes/level_4.tscn")
+	get_tree().change_scene_to_file("res://scenes/level_5.tscn")

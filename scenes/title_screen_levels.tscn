@@ -61,17 +61,17 @@ text = "Level 4
 [node name="level_5_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = " Coming Soon! "
+text = "Level 5"
 
 [node name="level_6_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "          ???          "
+text = " Coming Soon! "
 
 [node name="level_7_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "???"
+text = "          ???          "
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -98,3 +98,4 @@ offset = Vector2(30, 0)
 [connection signal="pressed" from="GridContainer/level_2_button" to="." method="_on_level_2_button_pressed"]
 [connection signal="pressed" from="GridContainer/level_3_button" to="." method="_on_level_3_button_pressed"]
 [connection signal="pressed" from="GridContainer/level_4_button" to="." method="_on_level_4_button_pressed"]
+[connection signal="pressed" from="GridContainer/level_5_button" to="." method="_on_level_5_button_pressed"]
