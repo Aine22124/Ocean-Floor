@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://1ln2bixesuhu"]
+[gd_scene load_steps=37 format=3 uid="uid://1ln2bixesuhu"]
 
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="1_kek2s"]
 [ext_resource type="Script" path="res://scripts/level_5.gd" id="1_wlikb"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/Sprite-00010.png" id="3_yh1p8"]
 [ext_resource type="Texture2D" uid="uid://dsuic00h37rrn" path="res://images/Sprite-00021.png" id="4_grxh8"]
 [ext_resource type="Texture2D" uid="uid://bcqpd6vm434lh" path="res://images/Sprite-00013.png" id="4_kkxc2"]
+[ext_resource type="Texture2D" uid="uid://bhagnjx7cjuh7" path="res://images/Sprite-00022.png" id="5_lbn2k"]
 [ext_resource type="Texture2D" uid="uid://bh7a6gdtbon1x" path="res://images/Sprite-00016.png" id="6_k4lf4"]
 [ext_resource type="Texture2D" uid="uid://dcq148ldjvqb0" path="res://images/Sprite-00012.png" id="6_vsx6k"]
 [ext_resource type="Texture2D" uid="uid://bengpig0vpi81" path="res://images/Sprite-00017.png" id="7_6ys4l"]
@@ -46,6 +47,14 @@ texture_region_size = Vector2i(120, 120)
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cqo8r"]
+texture = ExtResource("5_lbn2k")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 36, -60, 37, 60, -60, 60)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_32bcf"]
 texture = ExtResource("3_yh1p8")
@@ -125,6 +134,7 @@ sources/7 = SubResource("TileSetAtlasSource_3r504")
 sources/8 = SubResource("TileSetAtlasSource_72ojl")
 sources/9 = SubResource("TileSetAtlasSource_23opp")
 sources/10 = SubResource("TileSetAtlasSource_uwb2s")
+sources/11 = SubResource("TileSetAtlasSource_cqo8r")
 
 [node name="level_5" type="Node2D"]
 script = ExtResource("1_wlikb")
@@ -133,7 +143,7 @@ script = ExtResource("1_wlikb")
 position = Vector2(0, -120)
 tile_set = SubResource("TileSet_aoxrx")
 format = 2
-layer_0/tile_data = PackedInt32Array(589824, 4, 0, 524288, 4, 0, 458752, 6, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458760, 4, 0, 655360, 6, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 393224, 6, 0, 327688, 4, 0, 262152, 4, 0, 65544, 0, 0, 65543, 0, 0, 65542, 0, 0, 65541, 0, 0, 65540, 5, 0, 262148, 4, 0, 458757, 0, 0, 65539, 0, 0, 65538, 0, 0, 65537, 6, 0, 131073, 4, 0, 196609, 4, 0, 262145, 4, 0, 327681, 4, 0, 393217, 4, 0, 196612, 4, 0, 131076, 4, 0, 65545, 0, 0, 65546, 0, 0, 65547, 7, 0, 327691, 4, 0, 393227, 7, 0, 393225, 0, 0, 262155, 4, 0, 196619, 4, 0, 131083, 4, 0, 720896, 4, 0, 786432, 4, 0, 851968, 10, 0, 851969, 10, 0, 851970, 10, 0, 851971, 10, 0, 851972, 10, 0, 851973, 10, 0, 851974, 10, 0, 851975, 10, 0, 851976, 10, 0, 655368, 4, 0, 589832, 4, 0, 524296, 4, 0, 851977, 10, 0, 851978, 10, 0, 851979, 10, 0, 786443, 4, 0, 720907, 4, 0, 655371, 4, 0, 458763, 4, 0, 393226, 0, 0, 327684, 3, 0)
+layer_0/tile_data = PackedInt32Array(589824, 4, 0, 524288, 4, 0, 458752, 6, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458760, 4, 0, 655360, 6, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 393224, 6, 0, 327688, 4, 0, 262152, 4, 0, 65544, 0, 0, 65543, 0, 0, 65542, 0, 0, 65541, 0, 0, 65540, 5, 0, 262148, 4, 0, 458757, 0, 0, 65539, 0, 0, 65538, 0, 0, 65537, 6, 0, 131073, 4, 0, 196609, 4, 0, 262145, 4, 0, 327681, 4, 0, 393217, 4, 0, 196612, 4, 0, 131076, 4, 0, 65545, 0, 0, 65546, 0, 0, 65547, 7, 0, 327691, 4, 0, 393227, 7, 0, 393225, 0, 0, 262155, 4, 0, 196619, 4, 0, 131083, 4, 0, 720896, 4, 0, 786432, 4, 0, 851968, 10, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851972, 0, 0, 851973, 0, 0, 851974, 0, 0, 851975, 0, 0, 851976, 0, 0, 655368, 4, 0, 589832, 4, 0, 524296, 4, 0, 851977, 0, 0, 851978, 0, 0, 851979, 11, 0, 786443, 4, 0, 720907, 4, 0, 655371, 4, 0, 458763, 4, 0, 393226, 0, 0, 327684, 3, 0)
 
 [node name="player" parent="." instance=ExtResource("9_gr3e3")]
 position = Vector2(332, 938)
@@ -152,7 +162,7 @@ position = Vector2(1380, 967)
 rotation = 1.5708
 
 [node name="gate" parent="." instance=ExtResource("11_aal5j")]
-position = Vector2(1044, 1325)
+position = Vector2(1050, 1325)
 rotation = 1.5708
 
 [node name="lever" parent="." instance=ExtResource("12_ab3dn")]

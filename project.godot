@@ -13,8 +13,7 @@ config_version=5
 config/name="Ocean-Floor"
 run/main_scene="res://scenes/title_screen.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-boot_splash/bg_color=Color(0.0705882, 0.203922, 0.584314, 1)
-config/icon="res://images/icon.svg"
+config/icon="res://images/Ocean-Floor-piskel (2).png"
 
 [autoload]
 
@@ -51,4 +50,4 @@ player_left={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-environment/defaults/default_clear_color=Color(0, 0.254902, 0.560784, 1)
+environment/defaults/default_clear_color=Color(0.0780485, 0.292569, 0.446749, 1)
