@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cvk57h0abbr2p"]
+[gd_scene load_steps=33 format=3 uid="uid://cvk57h0abbr2p"]
 
 [ext_resource type="Script" path="res://scripts/level_4.gd" id="1_m1s3x"]
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="2_85pku"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="11_27hpp"]
 [ext_resource type="PackedScene" uid="uid://cxdg56u8mgvam" path="res://prefabs/pufferfish.tscn" id="12_42uwj"]
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="12_dcmin"]
+[ext_resource type="PackedScene" uid="uid://b3fson22evvsm" path="res://prefabs/1pufferfish.tscn" id="21_f0pv8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ek4h"]
 texture = ExtResource("2_85pku")
@@ -122,7 +123,7 @@ script = ExtResource("1_m1s3x")
 position = Vector2(0, -120)
 tile_set = SubResource("TileSet_aoxrx")
 format = 2
-layer_0/tile_data = PackedInt32Array(655360, 3, 0, 655361, 3, 0, 655362, 3, 0, 655363, 3, 0, 655364, 3, 0, 655365, 3, 0, 655366, 3, 0, 655367, 3, 0, 655368, 3, 0, 655369, 3, 0, 589824, 4, 0, 524288, 4, 0, 458752, 6, 0, 458753, 0, 0, 458754, 2, 0, 458755, 0, 0, 458756, 2, 0, 458757, 2, 0, 458758, 0, 0, 458759, 2, 0, 458760, 0, 0, 655370, 3, 0, 655371, 3, 0, 655372, 3, 0, 589836, 4, 0, 524300, 4, 0, 458764, 4, 0, 393228, 7, 0, 393227, 2, 0, 327691, 4, 0, 393216, 4, 0, 393220, 1, 0, 262155, 4, 0, 262152, 3, 0, 262151, 3, 0, 196615, 7, 0, 196614, 0, 0, 196613, 2, 0, 327680, 4, 0, 262144, 4, 0, 196608, 6, 0, 196609, 0, 0, 196610, 2, 0, 196611, 0, 0, 196612, 0, 0, 131079, 4, 0, 65543, 6, 0, 65544, 2, 0, 65545, 0, 0, 65546, 2, 0, 65547, 5, 0, 65548, 2, 0, 65549, 0, 0, 65550, 2, 0, 65551, 7, 0, 131087, 4, 0, 196623, 4, 0, 262159, 4, 0, 327695, 4, 0, 393231, 7, 0)
+layer_0/tile_data = PackedInt32Array(655360, 3, 0, 655361, 3, 0, 655362, 3, 0, 655363, 3, 0, 655364, 3, 0, 655365, 3, 0, 655366, 3, 0, 655367, 3, 0, 655368, 3, 0, 655369, 3, 0, 589824, 4, 0, 524288, 4, 0, 458752, 6, 0, 458753, 0, 0, 458754, 2, 0, 458755, 0, 0, 458756, 2, 0, 458757, 2, 0, 458758, 0, 0, 458759, 2, 0, 458760, 0, 0, 655370, 3, 0, 655371, 3, 0, 655372, 3, 0, 589836, 4, 0, 524300, 4, 0, 458764, 4, 0, 393228, 7, 0, 393227, 2, 0, 327691, 4, 0, 393216, 4, 0, 393220, 4, 0, 262155, 4, 0, 262152, 2, 0, 262151, 3, 0, 196615, 7, 0, 196614, 0, 0, 196613, 2, 0, 327680, 4, 0, 262144, 4, 0, 196608, 6, 0, 196609, 0, 0, 196610, 2, 0, 196611, 0, 0, 196612, 0, 0, 131079, 4, 0, 65543, 6, 0, 65544, 2, 0, 65545, 0, 0, 65546, 2, 0, 65547, 5, 0, 65548, 2, 0, 65549, 0, 0, 65550, 2, 0, 65551, 7, 0, 131087, 4, 0, 196623, 4, 0, 262159, 4, 0, 327695, 4, 0, 393231, 7, 0)
 
 [node name="player" parent="." instance=ExtResource("5_4vcn2")]
 position = Vector2(383, 962)
@@ -137,7 +138,7 @@ limit_right = 1925
 limit_bottom = 1200
 
 [node name="final-door" parent="." instance=ExtResource("6_mgvvp")]
-position = Vector2(1685, 686)
+position = Vector2(1666, 686)
 
 [node name="gate" parent="." instance=ExtResource("7_rum84")]
 position = Vector2(1383, 241)
@@ -194,15 +195,19 @@ position = Vector2(786, 379)
 scale = Vector2(1.625, 1.56)
 texture = ExtResource("12_dcmin")
 
-[node name="pufferfish" parent="." instance=ExtResource("12_42uwj")]
-position = Vector2(786, 839)
-
-[node name="pufferfish2" parent="." instance=ExtResource("12_42uwj")]
-position = Vector2(1030, 1053)
-rotation = 3.14159
-
 [node name="pufferfish3" parent="." instance=ExtResource("12_42uwj")]
 position = Vector2(680, 398)
+
+[node name="pufferfish" parent="." instance=ExtResource("21_f0pv8")]
+position = Vector2(777, 863)
+
+[node name="pufferfish2" parent="." instance=ExtResource("21_f0pv8")]
+position = Vector2(1046, 1052)
+rotation = 3.14159
+
+[node name="pufferfish4" parent="." instance=ExtResource("21_f0pv8")]
+position = Vector2(1302, 406)
+rotation = 1.5708
 
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
 [connection signal="body_entered" from="lever" to="gate2" method="_on_lever_body_entered"]

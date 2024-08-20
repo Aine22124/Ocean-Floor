@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpdtddgyr7fa7"
-path="res://.godot/imported/coin_rot_anim.png-54f486ed4627d940f223a97cce56e18f.ctex"
+uid="uid://drfdljs6vkw6q"
+path="res://.godot/imported/TX Tileset Stone Ground.png-4a2eb9b14afcd7e722837be28050aa4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/coin_rot_anim.png"
-dest_files=["res://.godot/imported/coin_rot_anim.png-54f486ed4627d940f223a97cce56e18f.ctex"]
+source_file="res://images/TX Tileset Stone Ground.png"
+dest_files=["res://.godot/imported/TX Tileset Stone Ground.png-4a2eb9b14afcd7e722837be28050aa4c.ctex"]
 
 [params]
 

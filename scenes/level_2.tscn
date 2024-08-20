@@ -149,6 +149,10 @@ rotation = 1.5708
 layer = 2
 
 [node name="oxgyen_timer" parent="CanvasLayer" instance=ExtResource("7_7e6fu")]
+offset_left = -6.0
+offset_top = -37.0
+offset_right = -6.0
+offset_bottom = -37.0
 
 [node name="treasure_chest" parent="." instance=ExtResource("9_qr0ue")]
 position = Vector2(582, 188)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://1ln2bixesuhu"]
+[gd_scene load_steps=33 format=3 uid="uid://1ln2bixesuhu"]
 
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="1_kek2s"]
 [ext_resource type="Script" path="res://scripts/level_5.gd" id="1_wlikb"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="15_aqm5h"]
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="16_t2s1n"]
 [ext_resource type="PackedScene" uid="uid://cxdg56u8mgvam" path="res://prefabs/pufferfish.tscn" id="17_qcciv"]
+[ext_resource type="PackedScene" uid="uid://b3fson22evvsm" path="res://prefabs/1pufferfish.tscn" id="21_i6u1f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ek4h"]
 texture = ExtResource("1_kek2s")
@@ -137,7 +138,7 @@ limit_right = 1425
 limit_bottom = 1550
 
 [node name="final-door" parent="." instance=ExtResource("10_aqmf6")]
-position = Vector2(1380, 953)
+position = Vector2(1380, 967)
 rotation = 1.5708
 
 [node name="gate" parent="." instance=ExtResource("11_aal5j")]
@@ -190,20 +191,24 @@ position = Vector2(636, 155)
 scale = Vector2(1.625, 1.56)
 texture = ExtResource("16_t2s1n")
 
-[node name="pufferfish" parent="." instance=ExtResource("17_qcciv")]
-position = Vector2(660, 1129)
-
 [node name="pufferfish2" parent="." instance=ExtResource("17_qcciv")]
-position = Vector2(659, 417)
+position = Vector2(645, 417)
 rotation = 4.71239
-
-[node name="pufferfish3" parent="." instance=ExtResource("17_qcciv")]
-position = Vector2(502, 401)
-rotation = 1.5708
 
 [node name="pufferfish4" parent="." instance=ExtResource("17_qcciv")]
 position = Vector2(1303, 327)
 rotation = 1.5708
+
+[node name="pufferfish" parent="." instance=ExtResource("21_i6u1f")]
+position = Vector2(452, 412)
+rotation = 1.5708
+
+[node name="pufferfish3" parent="." instance=ExtResource("17_qcciv")]
+position = Vector2(922, 1156)
+rotation = 1.5708
+
+[node name="pufferfish5" parent="." instance=ExtResource("21_i6u1f")]
+position = Vector2(646, 1206)
 
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
