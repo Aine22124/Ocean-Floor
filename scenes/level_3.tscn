@@ -1,8 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://ce1rv1ko2uyeb"]
+[gd_scene load_steps=29 format=3 uid="uid://ce1rv1ko2uyeb"]
 
 [ext_resource type="Script" path="res://scripts/level_3.gd" id="1_b2qvc"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="2_0vdhx"]
 [ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/Sprite-00010.png" id="2_4jdg6"]
+[ext_resource type="Texture2D" uid="uid://dsuic00h37rrn" path="res://images/Sprite-00021.png" id="3_cthxb"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="3_tis58"]
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="4_dequ5"]
 [ext_resource type="PackedScene" uid="uid://q0po87qhiry0" path="res://prefabs/lever.tscn" id="6_adlqg"]
@@ -15,6 +16,14 @@
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uct0t"]
 texture = ExtResource("2_4jdg6")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m5kyp"]
+texture = ExtResource("3_cthxb")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -103,6 +112,7 @@ sources/6 = SubResource("TileSetAtlasSource_lhlr0")
 sources/7 = SubResource("TileSetAtlasSource_01hrn")
 sources/8 = SubResource("TileSetAtlasSource_vjnml")
 sources/9 = SubResource("TileSetAtlasSource_qprut")
+sources/1 = SubResource("TileSetAtlasSource_m5kyp")
 
 [node name="level_3" type="Node2D"]
 script = ExtResource("1_b2qvc")
@@ -110,7 +120,7 @@ script = ExtResource("1_b2qvc")
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_kda6h")
 format = 2
-layer_0/tile_data = PackedInt32Array(1, 0, 0, 2, 0, 0, 0, 8, 0, 65536, 6, 0, 131072, 6, 0, 196608, 6, 0, 262144, 6, 0, 3, 7, 0, 4, 7, 0, 65540, 6, 0, 65539, 6, 0, 131075, 6, 0, 131076, 6, 0, 524288, 5, 0, 524289, 5, 0, 524290, 5, 0, 524291, 5, 0, 524292, 5, 0, 524293, 5, 0, 524294, 5, 0, 524295, 5, 0, 524296, 5, 0, 524297, 5, 0, 524298, 5, 0, 524299, 5, 0, 524300, 5, 0, 524301, 5, 0, 524302, 5, 0, 524303, 5, 0, 458767, 6, 0, 393231, 6, 0, 327695, 6, 0, 262159, 6, 0, 196623, 6, 0, 131087, 9, 0, 196624, 5, 0, 196625, 5, 0, 196626, 5, 0, 131090, 6, 0, 65554, 6, 0, 18, 9, 0, 10, 7, 0, 9, 7, 0, 8, 7, 0, 65544, 6, 0, 65545, 6, 0, 65546, 6, 0, 5, 3, 0, 6, 3, 0, 7, 0, 0, 11, 0, 0, 12, 3, 0, 13, 0, 0, 14, 3, 0, 15, 0, 0, 16, 3, 0, 17, 0, 0, 131080, 5, 0, 131081, 5, 0, 131082, 5, 0, 131085, 3, 0, 131084, 0, 0, 131086, 0, 0, 196611, 5, 0, 196612, 5, 0, 196613, 0, 0, 196614, 9, 0, 262150, 0, 0, 262151, 3, 0, 262152, 0, 0, 262153, 3, 0, 262154, 0, 0, 262155, 3, 0, 262156, 0, 0, 327680, 0, 0, 327681, 3, 0, 327682, 3, 0, 327683, 0, 0)
+layer_0/tile_data = PackedInt32Array(1, 0, 0, 2, 0, 0, 0, 8, 0, 65536, 6, 0, 131072, 6, 0, 196608, 6, 0, 262144, 6, 0, 3, 7, 0, 4, 7, 0, 65540, 6, 0, 65539, 6, 0, 131075, 6, 0, 131076, 6, 0, 524288, 1, 0, 524289, 1, 0, 524290, 1, 0, 524291, 1, 0, 524292, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0, 524303, 1, 0, 458767, 6, 0, 393231, 6, 0, 327695, 6, 0, 262159, 6, 0, 196623, 6, 0, 131087, 9, 0, 196624, 5, 0, 196625, 5, 0, 196626, 5, 0, 131090, 6, 0, 65554, 6, 0, 18, 9, 0, 10, 7, 0, 9, 7, 0, 8, 7, 0, 65544, 6, 0, 65545, 6, 0, 65546, 6, 0, 5, 3, 0, 6, 3, 0, 7, 0, 0, 11, 0, 0, 12, 3, 0, 13, 0, 0, 14, 3, 0, 15, 0, 0, 16, 3, 0, 17, 0, 0, 131080, 5, 0, 131081, 5, 0, 131082, 5, 0, 131085, 3, 0, 131084, 0, 0, 131086, 0, 0, 196611, 5, 0, 196612, 5, 0, 196613, 0, 0, 196614, 9, 0, 262150, 0, 0, 262151, 3, 0, 262152, 0, 0, 262153, 3, 0, 262154, 0, 0, 262155, 3, 0, 262156, 0, 0, 327680, 0, 0, 327681, 3, 0, 327682, 3, 0, 327683, 0, 0)
 
 [node name="player" parent="." instance=ExtResource("3_tis58")]
 position = Vector2(251, 204)

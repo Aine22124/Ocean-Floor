@@ -1,7 +1,8 @@
-[gd_scene load_steps=37 format=3 uid="uid://m3wre2antd3f"]
+[gd_scene load_steps=39 format=3 uid="uid://m3wre2antd3f"]
 
 [ext_resource type="Script" path="res://scripts/level_0.gd" id="1_mwxxt"]
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="2_fhkfe"]
+[ext_resource type="Texture2D" uid="uid://dsuic00h37rrn" path="res://images/Sprite-00021.png" id="2_okxkx"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="3_uase1"]
 [ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/Sprite-00010.png" id="4_2twx8"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="4_ot4sh"]
@@ -12,10 +13,17 @@
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="9_0nny1"]
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="10_kbtir"]
 [ext_resource type="Texture2D" uid="uid://udetfm2u3tcj" path="res://images/Water+.png" id="12_qfu8y"]
-[ext_resource type="Texture2D" uid="uid://drfdljs6vkw6q" path="res://images/TX Tileset Stone Ground.png" id="13_b1m3c"]
 [ext_resource type="Texture2D" uid="uid://m4mf2ppspdn3" path="res://images/TX Tileset Wall.png" id="14_616ws"]
 [ext_resource type="Texture2D" uid="uid://b25rpqg5qwmmg" path="res://images/TX Struct.png" id="15_lfdj2"]
 [ext_resource type="Texture2D" uid="uid://buj8sylfnetmi" path="res://images/TX Props.png" id="16_sod2h"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pflyr"]
+texture = ExtResource("2_okxkx")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_58b1e"]
 texture = ExtResource("3_uase1")
@@ -106,6 +114,7 @@ sources/15 = SubResource("TileSetAtlasSource_owmfb")
 sources/16 = SubResource("TileSetAtlasSource_4tp23")
 sources/17 = SubResource("TileSetAtlasSource_wjp02")
 sources/18 = SubResource("TileSetAtlasSource_6v6cs")
+sources/0 = SubResource("TileSetAtlasSource_pflyr")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_up6lp"]
 texture = ExtResource("12_qfu8y")
@@ -269,8 +278,11 @@ texture = ExtResource("12_qfu8y")
 1:13/0 = 0
 2:13/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rng2n"]
+load_path = "res://.godot/imported/TX Tileset Stone Ground.png-4a2eb9b14afcd7e722837be28050aa4c.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mj3vh"]
-texture = ExtResource("13_b1m3c")
+texture = SubResource("CompressedTexture2D_rng2n")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -1365,7 +1377,7 @@ script = ExtResource("1_mwxxt")
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xocca")
 format = 2
-layer_0/tile_data = PackedInt32Array(2, 12, 0, 5, 12, 0, 1, 13, 0, 3, 13, 0, 4, 13, 0, 6, 13, 0, 7, 16, 0, 65543, 15, 0, 131079, 15, 0, 196615, 15, 0, 327687, 15, 0, 393223, 15, 0, 393216, 15, 0, 327680, 15, 0, 196608, 15, 0, 131072, 15, 0, 65536, 15, 0, 262144, 17, 0, 0, 17, 0, 458752, 14, 0, 458759, 14, 0, 458753, 14, 0, 458758, 14, 0, 458754, 14, 0, 458757, 14, 0, 262151, 16, 0, 262145, 12, 0, 262150, 12, 0, 262146, 13, 0, 262149, 13, 0)
+layer_0/tile_data = PackedInt32Array(2, 12, 0, 5, 12, 0, 1, 13, 0, 3, 13, 0, 4, 13, 0, 6, 13, 0, 7, 16, 0, 65543, 15, 0, 131079, 15, 0, 196615, 15, 0, 327687, 15, 0, 393223, 15, 0, 393216, 15, 0, 327680, 15, 0, 196608, 15, 0, 131072, 15, 0, 65536, 15, 0, 262144, 17, 0, 0, 17, 0, 458752, 0, 0, 458759, 0, 0, 458753, 0, 0, 458758, 0, 0, 458754, 0, 0, 458757, 0, 0, 262151, 16, 0, 262145, 12, 0, 262150, 12, 0, 262146, 13, 0, 262149, 13, 0)
 
 [node name="player" parent="." instance=ExtResource("4_ot4sh")]
 position = Vector2(240, 207)
