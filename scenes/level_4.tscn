@@ -164,10 +164,6 @@ position = Vector2(1666, 686)
 position = Vector2(1407, 241)
 rotation = 1.5708
 
-[node name="gate2" parent="." instance=ExtResource("7_rum84")]
-position = Vector2(512, 477)
-rotation = -1.5708
-
 [node name="lever" parent="." instance=ExtResource("8_gl4pn")]
 position = Vector2(1149, 149)
 rotation = 1.5708
@@ -229,8 +225,8 @@ rotation = 3.14159
 position = Vector2(1302, 406)
 rotation = 1.5708
 
-[connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
-[connection signal="body_entered" from="lever" to="gate2" method="_on_lever_body_entered"]
+[connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
+[connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="treasure_chest_opened" from="treasure_chest2" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]

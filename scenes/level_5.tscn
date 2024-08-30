@@ -230,7 +230,7 @@ rotation = 1.5708
 [node name="pufferfish5" parent="." instance=ExtResource("21_i6u1f")]
 position = Vector2(646, 1206)
 
-[connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
+[connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="treasure_chest_opened" from="treasure_chest2" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
