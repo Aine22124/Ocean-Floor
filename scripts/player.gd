@@ -7,7 +7,7 @@ var move = Vector2.ZERO
 
 func get_input():
 	var input_dir = Input.get_vector("player_left", "player_right", "player_up", "player_down")
-	move = lerp(move, input_dir, 0.01)
+	move = lerp(move, input_dir, 0.015)
 	velocity = move * speed
 	self.set_rotation( velocity.angle())
 
@@ -16,7 +16,9 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-
+func _input(event):
+	if event.is_action_pressed("Meun"):
+		get_tree().change_scene_to_file("res://scenes/title_screen.tscn")
 
 
 

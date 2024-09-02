@@ -9,6 +9,10 @@ signal oxygen_0
 func _ready():
 	$oxygen/timer.set_wait_time(Autoload.TimeDuration)
 	timer.start
+	#if timer.get_time_left() == 0:
+	#	$oxygen.theme_override_colors(Color(0.671, 0, 0))
+	#else:
+	#	$oxygen.theme_override_colours(Color(1, 1, 1))
 
 func time_left_to_live():
 	var time_left = timer.get_time_left()
@@ -26,3 +30,4 @@ func _on_timer_timeout():
 	
 func set_coins(numcoins):
 	$points.text = "Coins: " + str(numcoins)
+	
