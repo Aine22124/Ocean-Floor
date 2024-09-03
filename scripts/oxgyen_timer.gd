@@ -34,5 +34,5 @@ func set_coins(numcoins):
 func add_time(amount):
 	var timer : Timer = $oxygen/timer
 	print(timer.wait_time)
-	timer.set_wait_time(timer.time_left + amount)
+	timer.start(timer.time_left + amount)
 	

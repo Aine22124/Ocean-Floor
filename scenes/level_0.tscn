@@ -164,7 +164,7 @@ position = Vector2(194, 667)
 position = Vector2(470, 348)
 
 [node name="bubbles" parent="." instance=ExtResource("14_s5o4o")]
-position = Vector2(485, 207)
+position = Vector2(466, 195)
 
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
