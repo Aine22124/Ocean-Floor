@@ -20,3 +20,8 @@ func _on_treasure_chest_treasure_chest_opened():
 
 func _on_finaldoor_door_entered():
 	get_tree().change_scene_to_file("res://scenes/level_2.tscn")
+
+
+func _on_bubbles_bubble_popped():
+	var timer = $CanvasLayer/oxgyen_timer
+	timer.add_time(5)

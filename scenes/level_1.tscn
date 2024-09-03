@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://cseuuo0o6u7t8"]
+[gd_scene load_steps=36 format=3 uid="uid://cseuuo0o6u7t8"]
 
 [ext_resource type="Script" path="res://scripts/level_1.gd" id="1_jwugd"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="2_j8gmw"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://ryex6chg42mn" path="res://images/Sprite-00019.png" id="11_j5h65"]
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="11_r6lyp"]
 [ext_resource type="Texture2D" uid="uid://cfodov8xa5imj" path="res://images/Sprite-00020.png" id="12_fduf8"]
+[ext_resource type="PackedScene" uid="uid://dm0drsykikkdl" path="res://prefabs/bubbles.tscn" id="22_7h4g3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o84vv"]
 texture = ExtResource("3_vj27g")
@@ -211,6 +212,18 @@ position = Vector2(786, 130)
 scale = Vector2(1.625, 1.56)
 texture = ExtResource("11_r6lyp")
 
+[node name="bubbles" parent="." instance=ExtResource("22_7h4g3")]
+position = Vector2(148, 520)
+
+[node name="bubbles2" parent="." instance=ExtResource("22_7h4g3")]
+position = Vector2(966, 1172)
+
+[node name="bubbles3" parent="." instance=ExtResource("22_7h4g3")]
+position = Vector2(1104, 909)
+
+[node name="bubbles4" parent="." instance=ExtResource("22_7h4g3")]
+position = Vector2(534, 213)
+
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
 [connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]
@@ -224,3 +237,7 @@ texture = ExtResource("11_r6lyp")
 [connection signal="coin_picked_up" from="coin6" to="." method="_on_coin_coin_picked_up"]
 [connection signal="coin_picked_up" from="coin7" to="." method="_on_coin_coin_picked_up"]
 [connection signal="coin_picked_up" from="coin8" to="." method="_on_coin_coin_picked_up"]
+[connection signal="bubble_popped" from="bubbles" to="." method="_on_bubbles_bubble_popped"]
+[connection signal="bubble_popped" from="bubbles2" to="." method="_on_bubbles_bubble_popped"]
+[connection signal="bubble_popped" from="bubbles3" to="." method="_on_bubbles_bubble_popped"]
+[connection signal="bubble_popped" from="bubbles4" to="." method="_on_bubbles_bubble_popped"]

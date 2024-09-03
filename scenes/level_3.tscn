@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://ce1rv1ko2uyeb"]
+[gd_scene load_steps=34 format=3 uid="uid://ce1rv1ko2uyeb"]
 
 [ext_resource type="Script" path="res://scripts/level_3.gd" id="1_b2qvc"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="2_0vdhx"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="10_akv7w"]
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="11_xxqs8"]
 [ext_resource type="PackedScene" uid="uid://cxdg56u8mgvam" path="res://prefabs/pufferfish.tscn" id="12_cihk5"]
+[ext_resource type="PackedScene" uid="uid://dm0drsykikkdl" path="res://prefabs/bubbles.tscn" id="16_h76bb"]
 [ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="17_rcpjt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uct0t"]
@@ -220,6 +221,12 @@ rotation = 3.14159
 [node name="pufferfish3" parent="." instance=ExtResource("12_cihk5")]
 position = Vector2(1434, 639)
 
+[node name="bubbles" parent="." instance=ExtResource("16_h76bb")]
+position = Vector2(2155, 143)
+
+[node name="bubbles2" parent="." instance=ExtResource("16_h76bb")]
+position = Vector2(1779, 911)
+
 [connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
@@ -235,3 +242,8 @@ position = Vector2(1434, 639)
 [connection signal="coin_picked_up" from="coin10" to="." method="_on_coin_coin_picked_up"]
 [connection signal="coin_picked_up" from="coin11" to="." method="_on_coin_coin_picked_up"]
 [connection signal="coin_picked_up" from="coin12" to="." method="_on_coin_coin_picked_up"]
+[connection signal="touched_pufferfish" from="pufferfish" to="." method="_on_pufferfish_touched_pufferfish"]
+[connection signal="touched_pufferfish" from="pufferfish2" to="." method="_on_pufferfish_touched_pufferfish"]
+[connection signal="touched_pufferfish" from="pufferfish3" to="." method="_on_pufferfish_touched_pufferfish"]
+[connection signal="bubble_popped" from="bubbles" to="." method="_on_bubbles_bubble_popped"]
+[connection signal="bubble_popped" from="bubbles2" to="." method="_on_bubbles_bubble_popped"]

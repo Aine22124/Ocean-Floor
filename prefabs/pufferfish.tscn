@@ -21,14 +21,14 @@ curve = SubResource("Curve2D_5jjvx")
 position = Vector2(3, -4)
 rotates = false
 
-[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D"]
+[node name="area-pufferfish" type="Area2D" parent="Path2D/PathFollow2D"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/area-pufferfish"]
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_bqvnb")
 
-[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Area2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/area-pufferfish"]
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_2hmvh")
 
-[connection signal="body_entered" from="Path2D/PathFollow2D/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Path2D/PathFollow2D/area-pufferfish" to="." method="_on_areapufferfish_body_entered"]

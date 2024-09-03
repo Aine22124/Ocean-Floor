@@ -3,4 +3,6 @@ signal leverpulled
 
 
 func _on_body_entered(body):
-	leverpulled.emit()
+	if body.name == "player":
+		#lever has been pulled, emit signal
+		leverpulled.emit()
