@@ -7,8 +7,8 @@ extends Node
 signal oxygen_0
 
 func _ready():
-	$oxygen/timer.set_wait_time(Autoload.TimeDuration)
-	timer.start
+	$oxygen/timer.wait_time = 200
+	timer.start()
 	#if timer.get_time_left() == 0:
 	#	$oxygen.theme_override_colors(Color(0.671, 0, 0))
 	#else:
@@ -30,4 +30,9 @@ func _on_timer_timeout():
 	
 func set_coins(numcoins):
 	$points.text = "Coins: " + str(numcoins)
+	
+func add_time(amount):
+	var timer : Timer = $oxygen/timer
+	print(timer.wait_time)
+	timer.set_wait_time(timer.time_left + amount)
 	
