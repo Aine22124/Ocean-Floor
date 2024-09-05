@@ -40,7 +40,7 @@ func remove_time(amount):
 	timer.start(timer.timer_left + amount)
 
 
-func _input(event):
-	var time : Timer = $oxygen/timer
-	if event.timer.timer_left == 0
-	$oxygen.add_color_override("default_color", Color(0.856, 0, 0))
+#func _input(event):
+	#var time : Timer = $oxygen/timer
+	#if event(timer.timer_left == 0)
+	#$oxygen.add_color_override("default_color", Color(0.856, 0, 0))

@@ -216,13 +216,7 @@ texture = ExtResource("11_r6lyp")
 position = Vector2(148, 520)
 
 [node name="bubbles2" parent="." instance=ExtResource("22_7h4g3")]
-position = Vector2(966, 1172)
-
-[node name="bubbles3" parent="." instance=ExtResource("22_7h4g3")]
-position = Vector2(1104, 909)
-
-[node name="bubbles4" parent="." instance=ExtResource("22_7h4g3")]
-position = Vector2(534, 213)
+position = Vector2(1106, 914)
 
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
@@ -239,5 +233,3 @@ position = Vector2(534, 213)
 [connection signal="coin_picked_up" from="coin8" to="." method="_on_coin_coin_picked_up"]
 [connection signal="bubble_popped" from="bubbles" to="." method="_on_bubbles_bubble_popped"]
 [connection signal="bubble_popped" from="bubbles2" to="." method="_on_bubbles_bubble_popped"]
-[connection signal="bubble_popped" from="bubbles3" to="." method="_on_bubbles_bubble_popped"]
-[connection signal="bubble_popped" from="bubbles4" to="." method="_on_bubbles_bubble_popped"]
