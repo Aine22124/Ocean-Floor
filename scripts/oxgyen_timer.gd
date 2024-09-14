@@ -37,10 +37,5 @@ func add_time(amount):
 func remove_time(amount):
 	var timer : Timer = $oxygen/timer
 	print(timer.wait_time)
+	#$oxygen.modulate(Color(0.86, 0.077, 0))
 	timer.start(timer.timer_left + amount)
-
-
-#func _input(event):
-	#var time : Timer = $oxygen/timer
-	#if event(timer.timer_left == 0)
-	#$oxygen.add_color_override("default_color", Color(0.856, 0, 0))
