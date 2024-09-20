@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu766eq5n8qh0"
-path="res://.godot/imported/Stairs Bridge.png-7c6ced5087dd83aba2d124e1bf7a678a.ctex"
+uid="uid://bcqlvwcbk7ggs"
+path="res://.godot/imported/Sprite-0001.png-98249dd61183462fce8bf2c6b1416f09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Stairs Bridge.png"
-dest_files=["res://.godot/imported/Stairs Bridge.png-7c6ced5087dd83aba2d124e1bf7a678a.ctex"]
+source_file="res://images/Sprite-0001.png"
+dest_files=["res://.godot/imported/Sprite-0001.png-98249dd61183462fce8bf2c6b1416f09.ctex"]
 
 [params]
 

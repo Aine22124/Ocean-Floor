@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4rvtg626kyo8"
-path="res://.godot/imported/Rocks.png-77858293177516f14be781650c11f915.ctex"
+uid="uid://5jcam28ykefp"
+path="res://.godot/imported/92007scub-diver-colours.PNG-3a7a6d10422b87274bcd1b6ee5be026a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Rocks.png"
-dest_files=["res://.godot/imported/Rocks.png-77858293177516f14be781650c11f915.ctex"]
+source_file="res://92007scub-diver-colours.PNG"
+dest_files=["res://.godot/imported/92007scub-diver-colours.PNG-3a7a6d10422b87274bcd1b6ee5be026a.ctex"]
 
 [params]
 
