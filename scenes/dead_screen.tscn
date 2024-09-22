@@ -21,10 +21,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -577.5
-offset_top = -27.5
-offset_right = 577.5
-offset_bottom = 27.5
+offset_left = -577.0
+offset_top = -27.0
+offset_right = 578.0
+offset_bottom = 31.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
@@ -83,5 +83,22 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_u2ejd")
 position = Vector2(333, 37)
 scale = Vector2(2.525, 2.525)
 texture = ExtResource("2_ola1o")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -33.0
+offset_bottom = 193.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.090606
+theme_override_font_sizes/font_size = 23
+text = "A tip to increase your oxygen 
+is to find oxygen bubbles nearby!"
+horizontal_alignment = 1
+vertical_alignment = 2
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

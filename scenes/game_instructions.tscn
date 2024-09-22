@@ -15,9 +15,9 @@ script = ExtResource("1_ea7wy")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 136.0
+offset_bottom = 103.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 80
+theme_override_font_sizes/font_size = 75
 text = "How to play Ocean Floor"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -29,21 +29,25 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -376.0
-offset_top = -194.0
-offset_right = 371.0
-offset_bottom = 226.0
+offset_left = -429.0
+offset_top = -232.0
+offset_right = 462.0
+offset_bottom = 302.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 27
 text = "Controls:
-wasd to move up, down, left and right 
-shift to sprint
-e to interact with things
+wasd to move up, down, left and right.
 
 Aim of the game:
 To reach the end of the level by reaching the 
-final gate before your oxygen runs out"
+final gate before your oxygen runs out
+
+Tips:
+Watch out for the pufferfish, if you touch them they will scare 
+and remore your oxygen!
+To increase oxygen when the time limit is near find  some 
+oxygen bubbles to breath a little longer."
 
 [node name="play_button" type="Button" parent="."]
 layout_mode = 1
@@ -53,9 +57,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -275.0
-offset_top = -78.0
+offset_top = -67.0
 offset_right = 275.0
-offset_bottom = -18.0
+offset_bottom = -7.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 35
