@@ -37,7 +37,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 27
 text = "Controls:
-wasd to move up, down, left and right.
+wasd or arrow keys to move up, down, left and right.
 
 Aim of the game:
 To reach the end of the level by reaching the 
