@@ -21,10 +21,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -220.0
-offset_top = 16.0
-offset_right = 220.0
-offset_bottom = 306.0
+offset_left = -246.0
+offset_top = 46.0
+offset_right = 248.0
+offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 40
@@ -39,12 +39,12 @@ text = "Trial Level"
 [node name="level_1_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 1"
+text = "       Level 1        "
 
 [node name="level_2_button" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 2"
+text = "       Level 2        "
 
 [node name="level_3_button" type="Button" parent="GridContainer"]
 layout_mode = 2
@@ -62,16 +62,6 @@ text = "Level 4
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Level 5"
-
-[node name="level_6_button" type="Button" parent="GridContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = " Coming Soon! "
-
-[node name="level_7_button" type="Button" parent="GridContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "          ???          "
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1

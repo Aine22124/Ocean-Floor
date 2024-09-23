@@ -3,6 +3,7 @@ extends StaticBody2D
 @onready var collision_shape_2d = $CollisionShape2D
 
 
+
 func _on_lever_leverpulled():
 	queue_free()
 	#hide()

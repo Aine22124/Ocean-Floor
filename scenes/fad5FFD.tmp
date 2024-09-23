@@ -69,12 +69,11 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.101961, 0.0352941, 0.360784, 1)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
-root_node = NodePath("../..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_wy1nx")
 }
 
-[connection signal="transition" from="." to="." method="_on_transition"]
+[connection signal="transition" from="." to="." method="transition"]
 [connection signal="transitioned" from="." to="." method="_on_transitioned"]
-[connection signal="animation_finished" from="ColorRect/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

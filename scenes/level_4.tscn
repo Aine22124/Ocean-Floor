@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://cvk57h0abbr2p"]
+[gd_scene load_steps=45 format=3 uid="uid://cvk57h0abbr2p"]
 
 [ext_resource type="Script" path="res://scripts/level_4.gd" id="1_m1s3x"]
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="2_85pku"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="12_dcmin"]
 [ext_resource type="PackedScene" uid="uid://b3fson22evvsm" path="res://prefabs/1pufferfish.tscn" id="21_f0pv8"]
 [ext_resource type="PackedScene" uid="uid://dm0drsykikkdl" path="res://prefabs/bubbles.tscn" id="24_w58m6"]
+[ext_resource type="Texture2D" uid="uid://do1rggbuymrem" path="res://images/Sprite-00062.png" id="28_fefw4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ek4h"]
 texture = ExtResource("2_85pku")
@@ -264,6 +265,11 @@ position = Vector2(1408, 747)
 
 [node name="bubbles3" parent="." instance=ExtResource("24_w58m6")]
 position = Vector2(969, 308)
+
+[node name="Sprite-00062" type="Sprite2D" parent="."]
+position = Vector2(1405, 240)
+rotation = 1.57079
+texture = ExtResource("28_fefw4")
 
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]

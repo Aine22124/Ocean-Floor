@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://cseuuo0o6u7t8"]
+[gd_scene load_steps=43 format=3 uid="uid://cseuuo0o6u7t8"]
 
 [ext_resource type="Script" path="res://scripts/level_1.gd" id="1_jwugd"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="2_j8gmw"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="11_r6lyp"]
 [ext_resource type="Texture2D" uid="uid://cfodov8xa5imj" path="res://images/Sprite-00020.png" id="12_fduf8"]
 [ext_resource type="PackedScene" uid="uid://dm0drsykikkdl" path="res://prefabs/bubbles.tscn" id="22_7h4g3"]
+[ext_resource type="Texture2D" uid="uid://do1rggbuymrem" path="res://images/Sprite-00062.png" id="26_1knb6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o84vv"]
 texture = ExtResource("3_vj27g")
@@ -247,6 +248,10 @@ position = Vector2(148, 520)
 
 [node name="bubbles2" parent="." instance=ExtResource("22_7h4g3")]
 position = Vector2(1106, 914)
+
+[node name="Sprite-00062" type="Sprite2D" parent="."]
+position = Vector2(1443, 544)
+texture = ExtResource("26_1knb6")
 
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]

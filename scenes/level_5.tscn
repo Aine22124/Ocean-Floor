@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://1ln2bixesuhu"]
+[gd_scene load_steps=45 format=3 uid="uid://1ln2bixesuhu"]
 
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="1_kek2s"]
 [ext_resource type="Script" path="res://scripts/level_5.gd" id="1_wlikb"]
@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://cxdg56u8mgvam" path="res://prefabs/pufferfish.tscn" id="17_qcciv"]
 [ext_resource type="PackedScene" uid="uid://b3fson22evvsm" path="res://prefabs/1pufferfish.tscn" id="21_i6u1f"]
 [ext_resource type="PackedScene" uid="uid://dm0drsykikkdl" path="res://prefabs/bubbles.tscn" id="24_akbvs"]
+[ext_resource type="Texture2D" uid="uid://do1rggbuymrem" path="res://images/Sprite-00062.png" id="28_qrl2k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ek4h"]
 texture = ExtResource("1_kek2s")
@@ -269,6 +270,11 @@ position = Vector2(1303, 149)
 
 [node name="bubbles3" parent="." instance=ExtResource("24_akbvs")]
 position = Vector2(642, 1352)
+
+[node name="Sprite-00062" type="Sprite2D" parent="."]
+position = Vector2(1051, 1325)
+rotation = 1.57079
+texture = ExtResource("28_qrl2k")
 
 [connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
