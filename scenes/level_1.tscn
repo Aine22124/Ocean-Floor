@@ -25,7 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/rock1.png" id="11_r6lyp"]
 [ext_resource type="Texture2D" uid="uid://cfodov8xa5imj" path="res://images/Sprite-00020.png" id="12_fduf8"]
 [ext_resource type="PackedScene" uid="uid://dm0drsykikkdl" path="res://prefabs/bubbles.tscn" id="22_7h4g3"]
-[ext_resource type="Texture2D" uid="uid://do1rggbuymrem" path="res://images/Sprite-00062.png" id="26_1knb6"]
+[ext_resource type="Texture2D" uid="uid://bnhdxia7je53j" path="res://images/Sprite-00026.png" id="26_hafxk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o84vv"]
 texture = ExtResource("3_vj27g")
@@ -186,10 +186,10 @@ limit_right = 2050
 limit_bottom = 1435
 
 [node name="final-door" parent="." instance=ExtResource("3_harwg")]
-position = Vector2(1441, 35)
+position = Vector2(1441, 60)
 
 [node name="gate" parent="." instance=ExtResource("4_ccgkk")]
-position = Vector2(1443, 543)
+position = Vector2(1443, 540)
 
 [node name="lever" parent="." instance=ExtResource("6_6bakt")]
 position = Vector2(460, 626)
@@ -249,9 +249,9 @@ position = Vector2(148, 520)
 [node name="bubbles2" parent="." instance=ExtResource("22_7h4g3")]
 position = Vector2(1106, 914)
 
-[node name="Sprite-00062" type="Sprite2D" parent="."]
-position = Vector2(1443, 544)
-texture = ExtResource("26_1knb6")
+[node name="Sprite-00026" type="Sprite2D" parent="."]
+position = Vector2(1443, 539)
+texture = ExtResource("26_hafxk")
 
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]

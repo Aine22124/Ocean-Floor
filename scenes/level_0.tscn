@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="9_0nny1"]
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="10_kbtir"]
 [ext_resource type="PackedScene" uid="uid://bh0dkdvbn2olj" path="res://scenes/fade_to_black_transitions.tscn" id="14_kcryn"]
-[ext_resource type="Texture2D" uid="uid://do1rggbuymrem" path="res://images/Sprite-00062.png" id="16_ogq52"]
+[ext_resource type="Texture2D" uid="uid://bnhdxia7je53j" path="res://images/Sprite-00026.png" id="16_wahpm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pflyr"]
 texture = ExtResource("2_okxkx")
@@ -154,10 +154,10 @@ limit_right = 1000
 limit_bottom = 960
 
 [node name="final-door" parent="." instance=ExtResource("5_wrl0i")]
-position = Vector2(481, 928)
+position = Vector2(481, 899)
 
 [node name="gate" parent="." instance=ExtResource("6_jcavr")]
-position = Vector2(477, 536)
+position = Vector2(477, 540)
 
 [node name="lever" parent="." instance=ExtResource("7_20egn")]
 position = Vector2(241, 447)
@@ -176,9 +176,9 @@ position = Vector2(470, 348)
 
 [node name="fade_to_black_transitions" parent="." instance=ExtResource("14_kcryn")]
 
-[node name="Sprite-00062" type="Sprite2D" parent="."]
-position = Vector2(477, 536)
-texture = ExtResource("16_ogq52")
+[node name="Sprite-00026" type="Sprite2D" parent="."]
+position = Vector2(478, 540)
+texture = ExtResource("16_wahpm")
 
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]

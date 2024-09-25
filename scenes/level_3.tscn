@@ -12,14 +12,14 @@
 [ext_resource type="Texture2D" uid="uid://bcqlvwcbk7ggs" path="res://images/Sprite-0001.png" id="6_c7rlk"]
 [ext_resource type="Texture2D" uid="uid://ccr7wslpqnjlf" path="res://images/Sprite-0002.png" id="7_7v40q"]
 [ext_resource type="Texture2D" uid="uid://bhagnjx7cjuh7" path="res://images/Sprite-00022.png" id="7_668ad"]
-[ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="7_e2605"]
 [ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="9_0jba2"]
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="10_akv7w"]
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="11_xxqs8"]
 [ext_resource type="PackedScene" uid="uid://cxdg56u8mgvam" path="res://prefabs/pufferfish.tscn" id="12_cihk5"]
 [ext_resource type="PackedScene" uid="uid://dm0drsykikkdl" path="res://prefabs/bubbles.tscn" id="16_h76bb"]
-[ext_resource type="PackedScene" uid="uid://ehe2rsrrwcxd" path="res://prefabs/final_door.tscn" id="17_rcpjt"]
-[ext_resource type="Texture2D" uid="uid://do1rggbuymrem" path="res://images/Sprite-00062.png" id="20_xeovv"]
+[ext_resource type="PackedScene" uid="uid://d1l870mcds67c" path="res://prefabs/gate_side.tscn" id="18_6iso2"]
+[ext_resource type="PackedScene" uid="uid://b8io4qyeofxs3" path="res://prefabs/final_door_side.tscn" id="19_vfe4v"]
+[ext_resource type="Texture2D" uid="uid://6yblxxmfu178" path="res://images/Sprite-00027.png" id="20_pksg1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uct0t"]
 texture = ExtResource("2_4jdg6")
@@ -189,14 +189,6 @@ limit_bottom = 1080
 position = Vector2(2038, 333)
 rotation = -1.5708
 
-[node name="gate" parent="." instance=ExtResource("7_e2605")]
-position = Vector2(416, 837)
-rotation = -1.5708
-
-[node name="final-door" parent="." instance=ExtResource("17_rcpjt")]
-position = Vector2(62, 842)
-rotation = -1.57079
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2
 
@@ -258,13 +250,20 @@ position = Vector2(2155, 143)
 [node name="bubbles2" parent="." instance=ExtResource("16_h76bb")]
 position = Vector2(1779, 911)
 
-[node name="Sprite-00062" type="Sprite2D" parent="."]
-position = Vector2(415, 833)
-rotation = -1.57079
-texture = ExtResource("20_xeovv")
+[node name="gate_side" parent="." instance=ExtResource("18_6iso2")]
+position = Vector2(420, 831)
+rotation = 3.14159
 
-[connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]
-[connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
+[node name="final-door_side" parent="." instance=ExtResource("19_vfe4v")]
+position = Vector2(85, 831)
+rotation = 3.14159
+
+[node name="Sprite-00027" type="Sprite2D" parent="."]
+position = Vector2(421, 831)
+rotation = -3.14159
+texture = ExtResource("20_pksg1")
+
+[connection signal="leverpulled" from="lever" to="gate_side" method="_on_lever_leverpulled"]
 [connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="coin_picked_up" from="coin2" to="." method="_on_coin_coin_picked_up"]
@@ -283,3 +282,4 @@ texture = ExtResource("20_xeovv")
 [connection signal="touched_pufferfish" from="pufferfish3" to="." method="_on_pufferfish_touched_pufferfish"]
 [connection signal="bubble_popped" from="bubbles" to="." method="_on_bubbles_bubble_popped"]
 [connection signal="bubble_popped" from="bubbles2" to="." method="_on_bubbles_bubble_popped"]
+[connection signal="door_entered" from="final-door_side" to="." method="_on_finaldoor_door_entered"]
