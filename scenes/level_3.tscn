@@ -2,16 +2,16 @@
 
 [ext_resource type="Script" path="res://scripts/level_3.gd" id="1_b2qvc"]
 [ext_resource type="Texture2D" uid="uid://chwhbuoh4ia33" path="res://images/icon.svg" id="2_0vdhx"]
-[ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/Sprite-00010.png" id="2_4jdg6"]
-[ext_resource type="Texture2D" uid="uid://dsuic00h37rrn" path="res://images/Sprite-00021.png" id="3_cthxb"]
+[ext_resource type="Texture2D" uid="uid://dkvkvf3ltumqm" path="res://images/stone_walls/Sprite-00010.png" id="2_4jdg6"]
+[ext_resource type="Texture2D" uid="uid://dsuic00h37rrn" path="res://images/stone_walls/Sprite-00021.png" id="3_cthxb"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="3_tis58"]
-[ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/Sprite-0008.png" id="4_dequ5"]
-[ext_resource type="Texture2D" uid="uid://ryex6chg42mn" path="res://images/Sprite-00019.png" id="4_t1h0v"]
-[ext_resource type="Texture2D" uid="uid://m4wyuaotvrii" path="res://images/Sprite-00024.png" id="5_xnh2y"]
+[ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/stone_walls/Sprite-0008.png" id="4_dequ5"]
+[ext_resource type="Texture2D" uid="uid://ryex6chg42mn" path="res://images/stone_walls/Sprite-00019.png" id="4_t1h0v"]
+[ext_resource type="Texture2D" uid="uid://m4wyuaotvrii" path="res://images/stone_walls/Sprite-00024.png" id="5_xnh2y"]
 [ext_resource type="PackedScene" uid="uid://q0po87qhiry0" path="res://prefabs/lever.tscn" id="6_adlqg"]
-[ext_resource type="Texture2D" uid="uid://bcqlvwcbk7ggs" path="res://images/Sprite-0001.png" id="6_c7rlk"]
-[ext_resource type="Texture2D" uid="uid://ccr7wslpqnjlf" path="res://images/Sprite-0002.png" id="7_7v40q"]
-[ext_resource type="Texture2D" uid="uid://bhagnjx7cjuh7" path="res://images/Sprite-00022.png" id="7_668ad"]
+[ext_resource type="Texture2D" uid="uid://bcqlvwcbk7ggs" path="res://images/stone_walls/Sprite-0001.png" id="6_c7rlk"]
+[ext_resource type="Texture2D" uid="uid://ccr7wslpqnjlf" path="res://images/stone_walls/Sprite-0002.png" id="7_7v40q"]
+[ext_resource type="Texture2D" uid="uid://bhagnjx7cjuh7" path="res://images/stone_walls/Sprite-00022.png" id="7_668ad"]
 [ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="9_0jba2"]
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="10_akv7w"]
 [ext_resource type="PackedScene" uid="uid://psung4ycl0xj" path="res://prefabs/treasure_chest.tscn" id="11_xxqs8"]
@@ -19,7 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://dm0drsykikkdl" path="res://prefabs/bubbles.tscn" id="16_h76bb"]
 [ext_resource type="PackedScene" uid="uid://d1l870mcds67c" path="res://prefabs/gate_side.tscn" id="18_6iso2"]
 [ext_resource type="PackedScene" uid="uid://b8io4qyeofxs3" path="res://prefabs/final_door_side.tscn" id="19_vfe4v"]
-[ext_resource type="Texture2D" uid="uid://6yblxxmfu178" path="res://images/Sprite-00027.png" id="20_pksg1"]
+[ext_resource type="Texture2D" uid="uid://6yblxxmfu178" path="res://images/stone_walls/Sprite-00027.png" id="20_pksg1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uct0t"]
 texture = ExtResource("2_4jdg6")
@@ -255,7 +255,7 @@ position = Vector2(420, 831)
 rotation = 3.14159
 
 [node name="final-door_side" parent="." instance=ExtResource("19_vfe4v")]
-position = Vector2(85, 831)
+position = Vector2(56, 831)
 rotation = 3.14159
 
 [node name="Sprite-00027" type="Sprite2D" parent="."]

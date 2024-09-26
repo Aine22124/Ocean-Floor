@@ -3,15 +3,15 @@
 [ext_resource type="Script" path="res://scripts/treasure_chest.gd" id="1_cgcfa"]
 [ext_resource type="Texture2D" uid="uid://cb6j5ppk0rb4r" path="res://images/Capture-removebg-preview.png" id="2_tjb1u"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4i4x"]
-size = Vector2(177, 192)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h1f8n"]
+size = Vector2(173, 131)
 
 [node name="treasure_chest" type="Area2D"]
 script = ExtResource("1_cgcfa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, -11)
-shape = SubResource("RectangleShape2D_g4i4x")
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_h1f8n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)

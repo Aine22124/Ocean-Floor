@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://b8io4qyeofxs3"]
 
 [ext_resource type="Script" path="res://scripts/final_door.gd" id="1_jo4mc"]
-[ext_resource type="Texture2D" uid="uid://6yblxxmfu178" path="res://images/Sprite-00027.png" id="2_ivsnh"]
+[ext_resource type="Texture2D" uid="uid://6yblxxmfu178" path="res://images/stone_walls/Sprite-00027.png" id="2_ivsnh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b8cjg"]
-size = Vector2(90, 255)
+size = Vector2(78, 255)
 
 [node name="final-door_side" type="Area2D"]
 script = ExtResource("1_jo4mc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-15, -0.5)
+position = Vector2(-8, -0.5)
 shape = SubResource("RectangleShape2D_b8cjg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
