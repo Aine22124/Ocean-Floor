@@ -25,10 +25,10 @@ func _on_finaldoor_door_entered():
 
 func _on_bubbles_bubble_popped():
 	var timer = $CanvasLayer/oxgyen_timer
-	timer.add_time(5)
+	timer.add_time(10)
 
 
 
 func _on_pufferfish_touched_pufferfish():
 	var timer = $CanvasLayer/oxgyen_timer
-	timer.add_time(-10)
+	timer.add_time(-15)

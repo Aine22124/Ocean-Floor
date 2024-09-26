@@ -181,18 +181,18 @@ position = Vector2(470, 348)
 position = Vector2(478, 540)
 texture = ExtResource("16_wahpm")
 
-[node name="Rock1" type="Sprite2D" parent="."]
-position = Vector2(795, 165)
-scale = Vector2(2.3125, 2.56)
-texture = ExtResource("17_jd3gk")
-
 [node name="Rock2" type="Sprite2D" parent="."]
-position = Vector2(678, 134)
+position = Vector2(678, 129)
 scale = Vector2(1.34375, 1.5)
 texture = ExtResource("17_jd3gk")
 
 [node name="Rock3" type="Sprite2D" parent="."]
 position = Vector2(143, 770)
+texture = ExtResource("17_jd3gk")
+
+[node name="Rock1" type="Sprite2D" parent="."]
+position = Vector2(786, 160)
+scale = Vector2(2.3125, 2.56)
 texture = ExtResource("17_jd3gk")
 
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
