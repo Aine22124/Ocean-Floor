@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://m3wre2antd3f"]
+[gd_scene load_steps=35 format=3 uid="uid://m3wre2antd3f"]
 
 [ext_resource type="Script" path="res://scripts/level_0.gd" id="1_mwxxt"]
 [ext_resource type="Texture2D" uid="uid://c0lvvlaom4gq" path="res://images/stone_walls/Sprite-0008.png" id="2_fhkfe"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://b8t05c2uxmj0j" path="res://prefabs/coin.tscn" id="10_kbtir"]
 [ext_resource type="PackedScene" uid="uid://bh0dkdvbn2olj" path="res://scenes/fade_to_black_transitions.tscn" id="14_kcryn"]
 [ext_resource type="Texture2D" uid="uid://bnhdxia7je53j" path="res://images/stone_walls/Sprite-00026.png" id="16_wahpm"]
+[ext_resource type="Texture2D" uid="uid://cutkg5e486dgi" path="res://images/stone_walls/rock1.png" id="17_jd3gk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pflyr"]
 texture = ExtResource("2_okxkx")
@@ -179,6 +180,20 @@ position = Vector2(470, 348)
 [node name="Sprite-00026" type="Sprite2D" parent="."]
 position = Vector2(478, 540)
 texture = ExtResource("16_wahpm")
+
+[node name="Rock1" type="Sprite2D" parent="."]
+position = Vector2(795, 165)
+scale = Vector2(2.3125, 2.56)
+texture = ExtResource("17_jd3gk")
+
+[node name="Rock2" type="Sprite2D" parent="."]
+position = Vector2(678, 134)
+scale = Vector2(1.34375, 1.5)
+texture = ExtResource("17_jd3gk")
+
+[node name="Rock3" type="Sprite2D" parent="."]
+position = Vector2(143, 770)
+texture = ExtResource("17_jd3gk")
 
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]

@@ -37,17 +37,17 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 27
 text = "Controls:
-wasd or arrow keys to move up, down, left and right.
+wasd or arrow keys to move up, down, left and right. Press Esc to 
+return to Title Screen
 
 Aim of the game:
 To reach the end of the level by reaching the 
 final gate before your oxygen runs out
 
 Tips:
-Watch out for the pufferfish, if you touch them they will scare 
-and remore your oxygen!
-To increase oxygen when the time limit is near find  some 
-oxygen bubbles to breath a little longer."
+Watch out for the pufferfish, if you touch them they will scare and 
+remove your oxygen! To increase oxygen when the time limit is near find  
+some oxygen bubbles to breath a little longer."
 
 [node name="play_button" type="Button" parent="."]
 layout_mode = 1
