@@ -194,7 +194,7 @@ position = Vector2(1672, 660)
 
 [node name="lever" parent="." instance=ExtResource("8_gl4pn")]
 position = Vector2(1149, 149)
-rotation = 1.5708
+rotation = 3.14159
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2

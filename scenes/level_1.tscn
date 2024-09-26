@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://cseuuo0o6u7t8"]
+[gd_scene load_steps=46 format=3 uid="uid://cseuuo0o6u7t8"]
 
 [ext_resource type="Script" path="res://scripts/level_1.gd" id="1_jwugd"]
 [ext_resource type="PackedScene" uid="uid://cvu02dgni5apl" path="res://prefabs/player.tscn" id="2_j8gmw"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dgripx0cv10sd" path="res://images/stone_walls/Sprite-00018.png" id="4_abxm3"]
 [ext_resource type="PackedScene" uid="uid://olpdqacc5np2" path="res://prefabs/gate.tscn" id="4_ccgkk"]
 [ext_resource type="PackedScene" uid="uid://bpspdhp4ksw40" path="res://prefabs/oxgyen_timer.tscn" id="4_ohkfp"]
+[ext_resource type="Texture2D" uid="uid://dkmahhercpf3k" path="res://images/Sprite-00028.png" id="5_6jx8y"]
 [ext_resource type="Texture2D" uid="uid://bhagnjx7cjuh7" path="res://images/stone_walls/Sprite-00022.png" id="5_tqnvu"]
 [ext_resource type="Texture2D" uid="uid://m4wyuaotvrii" path="res://images/stone_walls/Sprite-00024.png" id="6_0u7v6"]
 [ext_resource type="PackedScene" uid="uid://q0po87qhiry0" path="res://prefabs/lever.tscn" id="6_6bakt"]
@@ -46,6 +47,14 @@ texture_region_size = Vector2i(120, 120)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7lkam"]
 texture = ExtResource("4_47s81")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -60, 60, -60, 60, 60, -60, 60)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jjpa1"]
+texture = ExtResource("5_6jx8y")
 texture_region_size = Vector2i(120, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -166,6 +175,7 @@ sources/12 = SubResource("TileSetAtlasSource_vt18i")
 sources/13 = SubResource("TileSetAtlasSource_s318c")
 sources/14 = SubResource("TileSetAtlasSource_4caib")
 sources/15 = SubResource("TileSetAtlasSource_njytq")
+sources/11 = SubResource("TileSetAtlasSource_jjpa1")
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_jwugd")
@@ -173,7 +183,11 @@ script = ExtResource("1_jwugd")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_aoxrx")
 format = 2
-layer_0/tile_data = PackedInt32Array(262148, 3, 0, 327684, 3, 0, 6, 2, 0, 7, 7, 0, 458759, 14, 0, 458760, 15, 0, 589824, 3, 0, 655360, 14, 0, 655361, 8, 0, 655362, 8, 0, 655363, 8, 0, 655364, 8, 0, 655373, 14, 0, 655374, 8, 0, 655375, 15, 0, 196615, 14, 0, 524288, 3, 0, 524303, 15, 0, 589839, 15, 0, 524302, 8, 0, 589838, 8, 0, 458767, 15, 0, 393231, 15, 0, 327695, 15, 0, 196623, 3, 0, 131087, 3, 0, 65551, 3, 0, 15, 5, 0, 524299, 2, 0, 131080, 15, 0, 8, 7, 0, 458766, 14, 0, 393230, 14, 0, 327694, 14, 0, 524301, 14, 0, 589837, 14, 0, 131079, 14, 0, 196616, 15, 0, 0, 6, 0, 196608, 6, 0, 262144, 3, 0, 327680, 3, 0, 393216, 3, 0, 458752, 3, 0, 1, 2, 0, 2, 1, 0, 3, 2, 0, 4, 2, 0, 5, 1, 0, 9, 1, 0, 10, 2, 0, 13, 2, 0, 14, 1, 0, 720896, 13, 0, 720897, 10, 0, 720898, 10, 0, 720899, 10, 0, 720900, 10, 0, 720901, 10, 0, 720902, 1, 0, 720903, 1, 0, 720904, 1, 0, 720905, 1, 0, 720906, 1, 0, 720907, 1, 0, 720908, 1, 0, 720909, 10, 0, 720910, 10, 0, 720911, 12, 0, 524293, 7, 0, 524294, 2, 0, 524295, 1, 0, 524296, 2, 0, 524297, 2, 0, 524298, 1, 0, 393218, 6, 0, 393219, 2, 0, 393220, 1, 0, 196609, 2, 0, 196610, 1, 0, 196611, 2, 0, 589829, 3, 0, 655365, 15, 0, 262151, 13, 0, 262152, 7, 0, 262153, 1, 0, 262154, 2, 0, 262158, 5, 0, 262157, 2, 0, 327688, 4, 0, 65543, 14, 0, 65544, 15, 0, 524292, 2, 0, 262159, 15, 0, 458754, 3, 0, 524290, 4, 0, 196612, 5, 0)
+layer_0/tile_data = PackedInt32Array(262148, 3, 0, 327684, 3, 0, 6, 2, 0, 7, 7, 0, 458759, 14, 0, 458760, 15, 0, 589824, 3, 0, 655360, 14, 0, 655361, 8, 0, 655362, 8, 0, 655363, 8, 0, 655364, 8, 0, 655373, 14, 0, 655374, 8, 0, 655375, 15, 0, 196615, 14, 0, 524288, 3, 0, 524303, 15, 0, 589839, 15, 0, 524302, 8, 0, 589838, 8, 0, 458767, 15, 0, 393231, 15, 0, 327695, 15, 0, 196623, 3, 0, 131087, 3, 0, 65551, 3, 0, 15, 5, 0, 524299, 2, 0, 131080, 15, 0, 8, 7, 0, 458766, 14, 0, 393230, 14, 0, 327694, 14, 0, 524301, 14, 0, 589837, 14, 0, 131079, 14, 0, 196616, 15, 0, 0, 6, 0, 196608, 6, 0, 262144, 3, 0, 327680, 3, 0, 393216, 3, 0, 458752, 3, 0, 1, 2, 0, 2, 1, 0, 3, 2, 0, 4, 2, 0, 5, 1, 0, 9, 1, 0, 10, 2, 0, 13, 2, 0, 14, 1, 0, 720896, 13, 0, 720897, 10, 0, 720898, 10, 0, 720899, 10, 0, 720900, 10, 0, 720901, 10, 0, 720902, 1, 0, 720903, 1, 0, 720904, 1, 0, 720905, 1, 0, 720906, 1, 0, 720907, 1, 0, 720908, 1, 0, 720909, 10, 0, 720910, 10, 0, 720911, 12, 0, 524293, 7, 0, 524294, 2, 0, 524295, 1, 0, 524296, 2, 0, 524297, 2, 0, 524298, 1, 0, 393218, 6, 0, 393219, 2, 0, 393220, 1, 0, 196609, 2, 0, 196610, 1, 0, 196611, 2, 0, 589829, 3, 0, 655365, 15, 0, 262151, 13, 0, 262152, 7, 0, 262153, 1, 0, 262154, 2, 0, 262158, 11, 0, 262157, 2, 0, 327688, 4, 0, 65543, 14, 0, 65544, 15, 0, 524292, 2, 0, 262159, 15, 0, 458754, 3, 0, 524290, 4, 0, 196612, 5, 0)
+
+[node name="lever" parent="." instance=ExtResource("6_6bakt")]
+position = Vector2(477, 626)
+rotation = 4.71239
 
 [node name="player" parent="." instance=ExtResource("2_j8gmw")]
 position = Vector2(285, 223)
@@ -191,9 +205,6 @@ position = Vector2(1441, 60)
 
 [node name="gate" parent="." instance=ExtResource("4_ccgkk")]
 position = Vector2(1443, 540)
-
-[node name="lever" parent="." instance=ExtResource("6_6bakt")]
-position = Vector2(460, 626)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2
@@ -279,9 +290,9 @@ texture = ExtResource("11_r6lyp")
 position = Vector2(1792, 266)
 texture = ExtResource("11_r6lyp")
 
-[connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
 [connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]
+[connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]
 [connection signal="treasure_chest_opened" from="treasure_chest2" to="." method="_on_coin_coin_picked_up"]
 [connection signal="coin_picked_up" from="coin" to="." method="_on_coin_coin_picked_up"]
