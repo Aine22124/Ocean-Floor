@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciqigdgt3kg2o"]
+
+[ext_resource type="Script" path="res://scripts/dead_screen.gd" id="1_66j0n"]
+[ext_resource type="Texture2D" uid="uid://6p318cbw1vf2" path="res://images/Sprite-00011.png" id="2_u1qqh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2ejd"]
+
+[node name="dead_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_66j0n")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -577.0
+offset_top = -27.0
+offset_right = 578.0
+offset_bottom = 31.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Yay! You won! "
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -575.5
+offset_top = -207.0
+offset_right = 575.5
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 125
+text = "Congratulations!"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -244.0
+offset_top = 64.0
+offset_right = 244.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Play again?"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_u2ejd")
+
+[node name="Sprite-00011" type="Sprite2D" parent="PanelContainer"]
+position = Vector2(333, 37)
+scale = Vector2(2.525, 2.525)
+texture = ExtResource("2_u1qqh")
+
+[node name="Sprite-00012" type="Sprite2D" parent="PanelContainer"]
+texture_filter = 3
+position = Vector2(-327, 44)
+scale = Vector2(4.3, 4.175)
+texture = ExtResource("2_u1qqh")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
