@@ -273,6 +273,10 @@ scale = Vector2(2.64061, 2.43361)
 skew = -0.000913262
 texture = ExtResource("12_dcmin")
 
+[node name="Sprite-00028" type="Sprite2D" parent="."]
+position = Vector2(555, 483)
+texture = ExtResource("28_4mr5b")
+
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
 [connection signal="leverpulled" from="lever" to="gate_side" method="_on_lever_leverpulled"]
 [connection signal="treasure_chest_opened" from="treasure_chest" to="." method="_on_treasure_chest_treasure_chest_opened"]

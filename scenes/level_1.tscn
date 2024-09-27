@@ -298,6 +298,10 @@ texture = ExtResource("11_r6lyp")
 position = Vector2(1792, 266)
 texture = ExtResource("11_r6lyp")
 
+[node name="Sprite-00026" type="Sprite2D" parent="."]
+position = Vector2(1450, 540)
+texture = ExtResource("26_hafxk")
+
 [connection signal="body_entered" from="lever" to="gate" method="_on_lever_body_entered"]
 [connection signal="leverpulled" from="lever" to="gate" method="_on_lever_leverpulled"]
 [connection signal="door_entered" from="final-door" to="." method="_on_finaldoor_door_entered"]
